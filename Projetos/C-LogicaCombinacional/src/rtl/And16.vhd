@@ -7,3 +7,7 @@ entity And16 is
 			b:   in  STD_LOGIC_VECTOR(15 downto 0);
 			q:   out STD_LOGIC_VECTOR(15 downto 0));
 end entity;
+architecture rtl of And16 is
+begin
+   q <=  (a and b);
+end rtl;
