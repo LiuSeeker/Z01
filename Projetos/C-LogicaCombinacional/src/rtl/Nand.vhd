@@ -9,7 +9,7 @@ entity nand_z01 is
    );
 end nand_z01;
 
-architecture rtl of nand_z01 is
+architecture jor of nand_z01 is
 begin
    q <=  not (a and b);
-end rtl;
+end jor;
