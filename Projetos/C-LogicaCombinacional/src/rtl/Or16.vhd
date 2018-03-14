@@ -12,5 +12,7 @@ end entity;
 
 architecture rtl of OR16 is
 begin
+
 	q <= (a or b);
+
 end rtl;
