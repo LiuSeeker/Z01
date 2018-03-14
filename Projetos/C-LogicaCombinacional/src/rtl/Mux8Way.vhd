@@ -18,7 +18,7 @@ end entity;
 ----------------------------------------------------------
 architecture rtl of Mux8Way is
 begin
-
+-- Dado o tamanho da equação, preferi fazer o mux determinando as condições para a saída.
  q <= a when (sel = "000") else
       b when (sel = "001") else
       c when (sel = "010") else
