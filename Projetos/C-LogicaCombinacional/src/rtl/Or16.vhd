@@ -14,5 +14,4 @@ architecture rtl of OR16 is
 begin
 	--Apenas determinei que a saída "q" terá o valor de "a or b". Um OR bem simples.
 	q <= (a or b);
-
 end rtl;
