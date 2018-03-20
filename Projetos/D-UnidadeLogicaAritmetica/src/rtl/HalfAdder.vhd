@@ -15,7 +15,9 @@ entity HalfAdder is
 end entity;
 
 architecture rtl of HalfAdder is
-
 begin
+
+soma  <= a xor b; --Para fazermos o halfAdder, temos a saída soma e valium e eles 
+vaium <= a and b; --recebem, respectivamente, o 'xor' e 'and' das entradas
 
 end architecture;
