@@ -3,13 +3,13 @@ use ieee.std_logic_1164.all;
 
 entity nand_z01 is
    port(
-          a : in  std_logic;
+         a : in  std_logic;
 	      b : in  std_logic;
 	      q : out std_logic
    );
-end nand_z01;
+end entity;
 
 architecture jor of nand_z01 is
 begin
-   q <=  not (a and b);
+   q <=  not(a and b);
 end jor;

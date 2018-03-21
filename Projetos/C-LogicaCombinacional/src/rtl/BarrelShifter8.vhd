@@ -8,3 +8,17 @@ entity BarrelShifter8 is
 			size: in  STD_LOGIC_VECTOR(2 downto 0);    -- shift amount
 			q:    out STD_LOGIC_VECTOR(7 downto 0));  -- output vector (shifted)
 end entity;
+-- Para fazermos o Barrel Shifter com 8 bits, temos que transpor os bits na direção indicada
+-- por dir, na quantidade indicada por size
+architecture hardcore of BarrelShifter8 is
+begin
+	q <= a when (size = "000") else
+		  a(0)          & a(7 downto 1) when (dir = '1' and size = "001") else
+		  a(1 downto 0) & a(7 downto 2) when (dir = '1' and size = "010") else
+	     a(2 downto 0) & a(7 downto 3) when (dir = '1' and size = "011") else
+	     a(3 downto 0) & a(7 downto 4) when (dir = '1' and size = "100") else
+		  a(6 downto 0) & a(7)          when (dir = '0' and size = "001") else
+		  a(5 downto 0) & a(7 downto 6) when (dir = '0' and size = "010") else
+	     a(4 downto 0) & a(7 downto 5) when (dir = '0' and size = "011") else
+        a(3 downto 0) & a(7 downto 4) when (dir = '0' and size = "100");
+end hardcore;

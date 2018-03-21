@@ -10,3 +10,14 @@ entity DMux4Way is
 			q2:  out STD_LOGIC;
 			q3:  out STD_LOGIC);
 end entity;
+
+------------------------------------------------------
+architecture rtl of DMux4Way is
+begin
+--Para fazer o DMux eu preferi implementar a Equação da tabela verdade do que definir as condições para as saídas
+ q0 <= ((not sel(1)) and (not sel(0)) and a);
+ q1 <= ((not sel(1)) and sel(0) and a);
+ q2 <= (sel(1) and (not sel(0)) and a);
+ q3 <= (sel(1) and sel(0) and a);
+
+end rtl;
