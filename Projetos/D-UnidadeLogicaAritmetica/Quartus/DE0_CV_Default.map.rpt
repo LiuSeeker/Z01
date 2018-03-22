@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_CV_Default
-Wed Mar 21 17:37:06 2018
+Wed Mar 21 18:36:14 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -10,7 +10,17 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "ALU:ula0|Add16:ADD1|FullAdder:s"
+ 11. Port Connectivity Checks: "ALU:ula0|Add16:ADD1|FullAdder:d"
+ 12. Port Connectivity Checks: "ALU:ula0"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +43,27 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Mar 21 17:37:06 2018           ;
-; Quartus Prime Version       ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
-; Revision Name               ; DE0_CV_Default                              ;
-; Top-level Entity Name       ; TopLevel                                    ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Mar 21 18:36:14 2018       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE0_CV_Default                              ;
+; Top-level Entity Name           ; TopLevel                                    ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 20                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -154,13 +169,154 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                               ;
++-----------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path              ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                           ; Library ;
++-----------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+---------+
+; ../src/rtl/inversor16.vhd                     ; yes             ; User VHDL File  ; C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd   ;         ;
+; ../src/rtl/zerador16.vhd                      ; yes             ; User VHDL File  ; C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd    ;         ;
+; ../src/rtl/HalfAdder.vhd                      ; yes             ; User VHDL File  ; C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd    ;         ;
+; ../src/rtl/FullAdder.vhd                      ; yes             ; User VHDL File  ; C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd    ;         ;
+; ../src/rtl/comparador16.vhd                   ; yes             ; User VHDL File  ; C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd ;         ;
+; ../src/rtl/ALU.vhd                            ; yes             ; User VHDL File  ; C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd          ;         ;
+; ../src/rtl/Add16.vhd                          ; yes             ; User VHDL File  ; C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd        ;         ;
+; ../src/TopLevel.vhd                           ; yes             ; User VHDL File  ; C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd         ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Mux16.vhd ; yes             ; User VHDL File  ; C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd            ;         ;
+; ../../C-LogicaCombinacional/src/rtl/And16.vhd ; yes             ; User VHDL File  ; C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd            ;         ;
++-----------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 10          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 10          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 10          ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 0           ;
+;     -- <=3 input functions                  ; 0           ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 20          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[4]~input ;
+; Maximum fan-out                             ; 10          ;
+; Total fan-out                               ; 90          ;
+; Average fan-out                             ; 1.80        ;
++---------------------------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+--------------+--------------+
+; |TopLevel                  ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 20   ; 0            ; |TopLevel                           ; TopLevel     ; work         ;
+;    |ALU:ula0|              ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0                  ; ALU          ; work         ;
+;       |comparador16:COM|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0|comparador16:COM ; comparador16 ; work         ;
+;       |inversor16:INV|     ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0|inversor16:INV   ; inversor16   ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |TopLevel|ALU:ula0|inversor16:INV|y[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:ula0|Add16:ADD1|FullAdder:s"                                                     ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; vaium ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:ula0|Add16:ADD1|FullAdder:d" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; c    ; Input ; Info     ; Stuck at GND                      ;
++------+-------+----------+-----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:ula0"                                                                                   ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; x[6..4]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; x[1..0]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; x[15..7]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; x[3..2]      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; y[4..0]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; y[15..7]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; y[6]         ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; y[5]         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida[15..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 10                          ;
+;     normal            ; 10                          ;
+;         6 data inputs ; 10                          ;
+; boundary_port         ; 20                          ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 1.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Mar 21 17:36:56 2018
+    Info: Processing started: Wed Mar 21 18:35:59 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -185,8 +341,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
 Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/d-unidadelogicaaritmetica/src/rtl/alu.vhd
     Info (12022): Found design unit 1: alu-rtl File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 44
     Info (12023): Found entity 1: ALU File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 29
-Error (10500): VHDL syntax error at Add16.vhd(151) near text "q";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 151
-Info (12021): Found 0 design units, including 0 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/d-unidadelogicaaritmetica/src/rtl/add16.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/d-unidadelogicaaritmetica/src/rtl/add16.vhd
+    Info (12022): Found design unit 1: Add16-rtl File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 19
+    Info (12023): Found entity 1: Add16 File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/d-unidadelogicaaritmetica/src/toplevel.vhd
     Info (12022): Found design unit 1: TopLevel-rtl File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 29
     Info (12023): Found entity 1: TopLevel File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 19
@@ -199,59 +356,45 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
 Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/not16.vhd
     Info (12022): Found design unit 1: Not16-rtl File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 10
     Info (12023): Found entity 1: Not16 File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/nor8way.vhd
-    Info (12022): Found design unit 1: Nor8Way-jor File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 17
-    Info (12023): Found entity 1: Nor8Way File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/nand.vhd
     Info (12022): Found design unit 1: nand_z01-jor File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 12
     Info (12023): Found entity 1: nand_z01 File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 4
-Error (10500): VHDL syntax error at Mux16.vhd(22) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 22
-Error (10500): VHDL syntax error at Mux16.vhd(23) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 23
-Info (12021): Found 0 design units, including 0 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/mux16.vhd
-Error (10500): VHDL syntax error at Mux8Way16.vhd(22) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 22
-Error (10500): VHDL syntax error at Mux8Way16.vhd(23) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 23
-Error (10500): VHDL syntax error at Mux8Way16.vhd(24) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 24
-Error (10500): VHDL syntax error at Mux8Way16.vhd(25) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 25
-Error (10500): VHDL syntax error at Mux8Way16.vhd(26) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 26
-Error (10500): VHDL syntax error at Mux8Way16.vhd(27) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 27
-Error (10500): VHDL syntax error at Mux8Way16.vhd(28) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 28
-Error (10500): VHDL syntax error at Mux8Way16.vhd(29) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 29
-Info (12021): Found 0 design units, including 0 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/mux8way16.vhd
-Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/mux8way.vhd
-    Info (12022): Found design unit 1: Mux8Way-rtl File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 19
-    Info (12023): Found entity 1: Mux8Way File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/mux4way16.vhd
-    Info (12022): Found design unit 1: Mux4Way16-mux4_16 File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 14
-    Info (12023): Found entity 1: Mux4Way16 File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 4
-Error (10500): VHDL syntax error at Mux4Way.vhd(18) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 18
-Error (10500): VHDL syntax error at Mux4Way.vhd(19) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 19
-Error (10500): VHDL syntax error at Mux4Way.vhd(20) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 20
-Error (10500): VHDL syntax error at Mux4Way.vhd(21) near text "when";  expecting ";" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 21
-Info (12021): Found 0 design units, including 0 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/mux4way.vhd
-Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/mux2way.vhd
-    Info (12022): Found design unit 1: Mux2Way-jor File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 17
-    Info (12023): Found entity 1: Mux2Way File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 4
-Warning (12019): Can't analyze file -- file ../../C-LogicaCombinacional/src/rtl/DMux8Way16.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/dmux8way.vhd
-    Info (12022): Found design unit 1: DMux8Way-jor File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 18
-    Info (12023): Found entity 1: DMux8Way File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/dmux4way.vhd
-    Info (12022): Found design unit 1: DMux4Way-rtl File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 15
-    Info (12023): Found entity 1: DMux4Way File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 4
-Warning (12019): Can't analyze file -- file ../../C-LogicaCombinacional/src/rtl/DMux2Way.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/barrelshifter16.vhd
-    Info (12022): Found design unit 1: BarrelShifter16-BarrelShifter16_FOLKS File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd Line: 11
-    Info (12023): Found entity 1: BarrelShifter16 File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/barrelshifter8.vhd
-    Info (12022): Found design unit 1: BarrelShifter8-hardcore File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter8.vhd Line: 13
-    Info (12023): Found entity 1: BarrelShifter8 File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter8.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/mux16.vhd
+    Info (12022): Found design unit 1: Mux16-jor File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 17
+    Info (12023): Found entity 1: Mux16 File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /users/jorge/desktop/insper/z01-coldzera/projetos/c-logicacombinacional/src/rtl/and16.vhd
     Info (12022): Found design unit 1: And16-rtl File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 15
     Info (12023): Found entity 1: And16 File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 4
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 15 errors, 3 warnings
-    Error: Peak virtual memory: 761 megabytes
-    Error: Processing ended: Wed Mar 21 17:37:07 2018
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:25
+Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
+Warning (10540): VHDL Signal Declaration warning at TopLevel.vhd(35): used explicit default value for signal "x" because signal was never assigned a value File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 35
+Warning (10540): VHDL Signal Declaration warning at TopLevel.vhd(36): used explicit default value for signal "y" because signal was never assigned a value File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 36
+Critical Warning (10920): VHDL Incomplete Partial Association warning at TopLevel.vhd(65): port or argument "saida" has 8/16 unassociated elements File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 65
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ula0" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 65
+Info (12128): Elaborating entity "zerador16" for hierarchy "ALU:ula0|zerador16:ZERX" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 97
+Info (12128): Elaborating entity "inversor16" for hierarchy "ALU:ula0|inversor16:INVX" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 99
+Info (12128): Elaborating entity "And16" for hierarchy "ALU:ula0|And16:AND1" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 101
+Info (12128): Elaborating entity "Add16" for hierarchy "ALU:ula0|Add16:ADD1" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 102
+Warning (10036): Verilog HDL or VHDL warning at Add16.vhd(35): object "c16" assigned a value but never read File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 35
+Info (12128): Elaborating entity "FullAdder" for hierarchy "ALU:ula0|Add16:ADD1|FullAdder:d" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 40
+Info (12128): Elaborating entity "HalfAdder" for hierarchy "ALU:ula0|Add16:ADD1|FullAdder:d|HalfAdder:H1" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd Line: 30
+Info (12128): Elaborating entity "Mux16" for hierarchy "ALU:ula0|Mux16:MUX" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 103
+Info (12128): Elaborating entity "comparador16" for hierarchy "ALU:ula0|comparador16:COM" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 105
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 21
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 21
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 21
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 21
+Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 10 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 774 megabytes
+    Info: Processing ended: Wed Mar 21 18:36:14 2018
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:23
 
 

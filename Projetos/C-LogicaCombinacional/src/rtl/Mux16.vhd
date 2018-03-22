@@ -16,10 +16,9 @@ end entity;
 
 architecture jor of Mux16 is
 begin
-process (a,b,sel) is
-begin
+
 --Lógica para funcionamento do Mux16
-q <= a when sel = '0';
-q <= b when sel = '1';
-end process;
+q <= a when sel = '0' else
+	  b;
+	  
 end jor;
