@@ -25,8 +25,21 @@ entity PC is
 end entity;
 
 architecture arch of PC is
-
+begin
+process(clock, increment, load, reset, input)
 begin
 
 
+if rising_edge(clock) then
+	if reset = '1' then
+		output <= "0000000000000000";
+	elsif load = '1' then
+		output <= input;
+	elsif increment = '1' then
+		output += "1";
+	else
+		output <= output;
+	end if;
+end if;
+end process;
 end architecture;
