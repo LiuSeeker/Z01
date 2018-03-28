@@ -30,6 +30,6 @@ begin
     R1: Register32 port map(clock, input(31 downto 0), load, saida(31 downto 0));
     R2: Register32 port map(clock, input(63 downto 32), load,saida(63 downto 32));
 
-    output <= saida
+    output <= saida;
 
 end reg64;
