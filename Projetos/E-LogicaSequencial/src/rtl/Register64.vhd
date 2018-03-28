@@ -15,9 +15,9 @@ entity Register64 is
 end entity;
 
 architecture reg64 of Register64 is
-  signal saida: STD_LOGIC_VECTOR(63 downto 0);
+  signal saida: STD_LOGIC_VECTOR(63 downto 0); --sinal de saida dos registers
 
-  component Register32 is
+  component Register32 is  --adicionando componente Register32
     port(
       clock:   in STD_LOGIC;
       input:   in STD_LOGIC_VECTOR(31 downto 0);
@@ -27,9 +27,9 @@ architecture reg64 of Register64 is
   end component;
 begin
 
-    R1: Register32 port map(clock, input(31 downto 0), load, saida(31 downto 0));
+    R1: Register32 port map(clock, input(31 downto 0), load, saida(31 downto 0)); --port map dos registers
     R2: Register32 port map(clock, input(63 downto 32), load,saida(63 downto 32));
 
-    output <= saida;
+    output <= saida; --output recebe saida dos registers combinadas
 
 end reg64;
