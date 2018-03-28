@@ -14,8 +14,8 @@ entity BinaryDigit is
 	);
 end entity;
 
-architecture aaa of BinaryDigit is
-  signal outmux, outdff: STD_LOGIC;
+architecture aaa of BinaryDigit is  --iniciando arquitetura do BinaryDigit
+  signal outmux, outdff: STD_LOGIC;  --criando sinais para saida do mux e flipflop
 
   component FlipFlopD is          --Utilizando o componente FlipFlopD
   port(
@@ -34,9 +34,9 @@ architecture aaa of BinaryDigit is
   end component;
 begin
 
-  DFF1: FlipFlopD port map(clock, outmux, '0', '0', outdff);
-  MUX1: Mux2Way port map(outdff,input,load,outmux);
+  DFF1: FlipFlopD port map(clock, outmux, '0', '0', outdff); --port map do FlipFlopD
+  MUX1: Mux2Way port map(outdff,input,load,outmux);  --port map do Mux2Way
 
-output <= outdff;
+output <= outdff; --a saída do binary é o sinal que sai do flip flop
 
 end architecture;
