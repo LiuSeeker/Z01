@@ -45,8 +45,5 @@ script:
   - python Projetos/0-Infra/testeVHDL.py
   - python Projetos/C-LogicaCombinacional/script/testeLogicaCombinacional.py
   - python Projetos/D-UnidadeLogicaAritmetica/script/testeULA.py
-<<<<<<< HEAD
   - pytjon Projetos/E-LogicaSequencial/script/testeLogicaSequencial.py
-=======
-    
->>>>>>> 25eab41321fab3cdb875536267705a516a79367b
+
