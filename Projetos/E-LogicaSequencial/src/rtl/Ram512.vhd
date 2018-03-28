@@ -5,6 +5,8 @@
 Library ieee; 
 use ieee.std_logic_1164.all;
   
+--ENTIDADE
+
 entity Ram512 is
 	port(
 		clock:   in  STD_LOGIC;
@@ -15,7 +17,11 @@ entity Ram512 is
 	);
 end entity;
 
+--ARQUITETURA
+
 architecture behavi of Ram512 is
+	
+	--PORTMAPS
 
 	component DMux8Way is
 		port ( 
@@ -72,7 +78,7 @@ begin
 	ram16_5: Ram64 port map(clock, l5, input, address(5 downto 0), o5);
 	ram16_6: Ram64 port map(clock, l6, input, address(5 downto 0), o6);
 	ram16_7: Ram64 port map(clock, l7, input, address(5 downto 0), o7);
-
+	-- Mux final
 	mux1: Mux8Way16 port map(o0, o1, o2, o3, o4, o5, o6, o7, address(8 downto 6), output);
 
 

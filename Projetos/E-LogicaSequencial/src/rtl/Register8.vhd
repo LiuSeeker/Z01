@@ -4,7 +4,9 @@
 
 Library ieee; 
 use ieee.std_logic_1164.all;
-  
+ 
+--ENTIDADE
+
 entity Register8 is
 	port(
 		clock:   in STD_LOGIC;
@@ -14,6 +16,7 @@ entity Register8 is
 	);
 end entity;
 
+--ARQUITETURA
 
 architecture behavioral of Register8 is
 
