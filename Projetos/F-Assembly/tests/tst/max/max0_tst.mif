@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -- Elementos de Sistema - INSPER.edu.br
 -- Rafael Corsi
 
@@ -10,3 +11,17 @@ DATA_RADIX=BIN;
 CONTENT BEGIN
        2 : 0000000000001001;
 END;
+=======
+-- Elementos de Sistema - INSPER.edu.br
+-- Rafael Corsi
+
+WIDTH=16;
+DEPTH=30;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+       2 : 0000000000001001;
+END;
+>>>>>>> upstream/master

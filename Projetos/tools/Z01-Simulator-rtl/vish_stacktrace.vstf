@@ -23,6 +23,7 @@
 # 15   0xf7aaf7be: '__libc_start_main + 0xee' in '/usr/lib32/libc.so.6'
 # End of Stack Trace
 
+<<<<<<< HEAD
 # Current time Mon Mar 26 18:26:51 2018
 # ModelSim - Intel FPGA Edition Stack Trace
 # Program = vish
@@ -32,3 +33,14 @@
 # Platform = win32pe
 
 Exception c0000005 has occurred at address 72e79f47. Traceback:
+=======
+# Current time Mon Mar 26 18:26:51 2018
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 72e79f47. Traceback:
+>>>>>>> upstream/master
