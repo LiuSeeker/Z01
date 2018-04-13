@@ -10,12 +10,8 @@
 
 import os,sys
 import argparse
-<<<<<<< HEAD
-
-=======
 import subprocess
 import re
->>>>>>> upstream/master
 
 TOOLSPATH = os.path.dirname(os.path.abspath(__file__))+"/../"
 
@@ -25,14 +21,10 @@ from log import logError, logAssembler
 jar = TOOLSPATH+"jar/Z01-Assembler.jar"
 
 def callJava(jar, nasm, hack):
-<<<<<<< HEAD
-        os.system("java -jar " + jar + " -i " + nasm + " -o " + hack)
-=======
     command = "java -jar " + jar + " -i " + nasm + " -o " + hack
     proc = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
     (out, err) = proc.communicate()
    # os.system("java -jar " + jar + " -i " + nasm + " -o " + hack)
->>>>>>> upstream/master
 
 def assembler(jar, nasm, hack, mif):
 
@@ -42,11 +34,8 @@ def assembler(jar, nasm, hack, mif):
     os.path.abspath(nasm)
     os.path.abspath(hack)
 
-<<<<<<< HEAD
-    if not os.path.exists( os.path.dirname(hack)):
-=======
+
     if not os.path.exists(os.path.dirname(hack)):
->>>>>>> upstream/master
         os.makedirs(os.path.dirname(hack))
 
     if(os.path.isdir(nasm)) :
@@ -59,17 +48,7 @@ def assembler(jar, nasm, hack, mif):
                     nNasm = nasm+filename
                     print("Compiling {} to {}".format(nNasm, nHack))
                     callJava(jar, nNasm, nHack)
-<<<<<<< HEAD
-                    if toMIF:
-                        toMIF(nHack,nMif)
-        else:
-            logError("output must be folder for folder input!")
-    else:
-        callJava(jar, nasm, hack+".hack")
-        if(mif):
-            toMIF(hack, os.path.splitext(hack)[0]+".mif")
 
-=======
                     if mif:
                         toMIF(nHack, nMif)
         else:
@@ -80,8 +59,6 @@ def assembler(jar, nasm, hack, mif):
         if(mif):
             toMIF(hack, os.path.splitext(hack)[0]+".mif")
 
-
->>>>>>> upstream/master
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--nasm" , required=True, help="arquivo nasm")
