@@ -1,11 +1,11 @@
-INICIO:
-leaw $0, %A
-movw %A, %S                   ; Carrega 0 em S
-ADD:                              ; Label para saltar
-incw %S                       ; Incrementa S
-leaw $ADD, %A                 ; Carrega endereço do label ADD
-jmp                           ; Salto incondicional
-nop                           ; No-Operation
+leaw $1, %A
+movw (%A),%S
+
+
+
+
+
+
 
 
 

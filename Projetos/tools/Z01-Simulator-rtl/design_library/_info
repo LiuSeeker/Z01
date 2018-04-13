@@ -1241,9 +1241,9 @@ VME3]R1o59@k3V5_1zNjd20
 !s100 H?1ICb>QI:QaZ2gDcY3n53
 R6
 32
-Z154 !s110 1523618124
+Z154 !s110 1523619968
 !i10b 1
-Z155 !s108 1523618123.000000
+Z155 !s108 1523619968.000000
 Z156 !s90 -work|work|./Modulos/dispositivos/PLL/PLL_sim/PLL.vho|
 Z157 !s107 ./Modulos/dispositivos/PLL/PLL_sim/PLL.vho|
 !i113 1
@@ -1360,11 +1360,11 @@ V?W3fU8AJPJ2S[;=PMJaMU1
 !s100 Pe>;JD`:?:`O3@C?zeRZV0
 R6
 32
-Z171 !s110 1523618123
+R154
 !i10b 1
 R155
-Z172 !s90 -work|work|./Modulos/dispositivos/RAM_fpga/RAM16K.vhd|
-Z173 !s107 ./Modulos/dispositivos/RAM_fpga/RAM16K.vhd|
+Z171 !s90 -work|work|./Modulos/dispositivos/RAM_fpga/RAM16K.vhd|
+Z172 !s107 ./Modulos/dispositivos/RAM_fpga/RAM16K.vhd|
 !i113 1
 R11
 R12
@@ -1379,11 +1379,11 @@ Vg0NboCEj?HE1_g@RIEY[_1
 !s100 [GJf;NNYFla2IMVzMc2b43
 R6
 32
-R171
+R154
 !i10b 1
 R155
+R171
 R172
-R173
 !i113 1
 R11
 R12
@@ -1392,8 +1392,8 @@ R0
 R1
 R2
 R3
-Z174 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram4K.vhd
-Z175 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram4K.vhd
+Z173 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram4K.vhd
+Z174 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram4K.vhd
 l0
 L8
 V2RJ7Uok0a9@l?<IZKM:hW0
@@ -1403,8 +1403,8 @@ R6
 R160
 !i10b 1
 R146
-Z176 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram4K.vhd|
-Z177 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram4K.vhd|
+Z175 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram4K.vhd|
+Z176 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram4K.vhd|
 !i113 1
 R11
 R12
@@ -1421,8 +1421,8 @@ R6
 R160
 !i10b 1
 R146
+R175
 R176
-R177
 !i113 1
 R11
 R12
@@ -1431,8 +1431,8 @@ R0
 R1
 R2
 R3
-Z178 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram512.vhd
-Z179 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram512.vhd
+Z177 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram512.vhd
+Z178 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram512.vhd
 l0
 L8
 VXBT5[VikKknDFdaNSFR:72
@@ -1442,8 +1442,8 @@ R6
 R160
 !i10b 1
 R146
-Z180 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram512.vhd|
-Z181 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram512.vhd|
+Z179 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram512.vhd|
+Z180 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram512.vhd|
 !i113 1
 R11
 R12
@@ -1460,8 +1460,8 @@ R6
 R160
 !i10b 1
 R146
+R179
 R180
-R181
 !i113 1
 R11
 R12
@@ -1470,8 +1470,8 @@ R0
 R1
 R2
 R3
-Z182 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram64.vhd
-Z183 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram64.vhd
+Z181 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram64.vhd
+Z182 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram64.vhd
 l0
 L8
 VRB5`ZMb2VWX7JTI]b6`]_1
@@ -1481,8 +1481,8 @@ R6
 R160
 !i10b 1
 R146
-Z184 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram64.vhd|
-Z185 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram64.vhd|
+Z183 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram64.vhd|
+Z184 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram64.vhd|
 !i113 1
 R11
 R12
@@ -1499,8 +1499,8 @@ R6
 R160
 !i10b 1
 R146
+R183
 R184
-R185
 !i113 1
 R11
 R12
@@ -1509,8 +1509,8 @@ R0
 R1
 R2
 R3
-Z186 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram8.vhd
-Z187 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram8.vhd
+Z185 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram8.vhd
+Z186 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram8.vhd
 l0
 L8
 VJ^dIlVa1jaALNOH@HK];a0
@@ -1520,8 +1520,8 @@ R6
 R160
 !i10b 1
 R146
-Z188 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram8.vhd|
-Z189 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram8.vhd|
+Z187 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram8.vhd|
+Z188 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Ram8.vhd|
 !i113 1
 R11
 R12
@@ -1538,8 +1538,8 @@ R6
 R160
 !i10b 1
 R146
+R187
 R188
-R189
 !i113 1
 R11
 R12
@@ -1548,8 +1548,8 @@ R0
 R1
 R2
 R3
-Z190 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register16.vhd
-Z191 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register16.vhd
+Z189 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register16.vhd
+Z190 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register16.vhd
 l0
 L8
 VSXfWzLnh>jm:TgO2h]j@11
@@ -1558,9 +1558,9 @@ R6
 32
 R160
 !i10b 1
-Z192 !s108 1521842844.000000
-Z193 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register16.vhd|
-Z194 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register16.vhd|
+Z191 !s108 1521842844.000000
+Z192 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register16.vhd|
+Z193 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register16.vhd|
 !i113 1
 R11
 R12
@@ -1576,9 +1576,9 @@ R6
 32
 R160
 !i10b 1
+R191
 R192
 R193
-R194
 !i113 1
 R11
 R12
@@ -1587,19 +1587,19 @@ R0
 R1
 R2
 R3
-Z195 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register32.vhd
-Z196 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register32.vhd
+Z194 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register32.vhd
+Z195 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register32.vhd
 l0
 L8
 VDcNSWzoRLc5DJn@UbWZR]1
 !s100 []:^=AY8a3]ML1PkdZ@Ea3
 R6
 32
-Z197 !s110 1521842844
+Z196 !s110 1521842844
 !i10b 1
-R192
-Z198 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register32.vhd|
-Z199 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register32.vhd|
+R191
+Z197 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register32.vhd|
+Z198 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register32.vhd|
 !i113 1
 R11
 R12
@@ -1613,11 +1613,11 @@ VIB9;4fJ2iMjE`_@@^FzMW3
 !s100 S^he`KSCS@0NKi;lDmhf02
 R6
 32
-R197
+R196
 !i10b 1
-R192
+R191
+R197
 R198
-R199
 !i113 1
 R11
 R12
@@ -1626,19 +1626,19 @@ R0
 R1
 R2
 R3
-Z200 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register64.vhd
-Z201 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register64.vhd
+Z199 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register64.vhd
+Z200 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register64.vhd
 l0
 L8
 V_31lC;H>Rg3UQ9VWdSY_A3
 !s100 LCbS]1neA;d2ePolK?XW]3
 R6
 32
-R197
+R196
 !i10b 1
-R192
-Z202 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register64.vhd|
-Z203 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register64.vhd|
+R191
+Z201 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register64.vhd|
+Z202 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register64.vhd|
 !i113 1
 R11
 R12
@@ -1652,11 +1652,11 @@ Vg>D:o6B`6amc<`BIeJFFk3
 !s100 fVg<FjOc]0L:FQ:O6RJFG2
 R6
 32
-R197
+R196
 !i10b 1
-R192
+R191
+R201
 R202
-R203
 !i113 1
 R11
 R12
@@ -1665,8 +1665,8 @@ R0
 R1
 R2
 R3
-Z204 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register8.vhd
-Z205 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register8.vhd
+Z203 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register8.vhd
+Z204 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register8.vhd
 l0
 L8
 VI9bFH32^`LLZl1[jmYL2B1
@@ -1676,8 +1676,8 @@ R6
 R160
 !i10b 1
 R146
-Z206 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register8.vhd|
-Z207 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register8.vhd|
+Z205 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register8.vhd|
+Z206 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/CircuitosSequenciais/Register8.vhd|
 !i113 1
 R11
 R12
@@ -1694,8 +1694,8 @@ R6
 R160
 !i10b 1
 R146
+R205
 R206
-R207
 !i113 1
 R11
 R12
@@ -1705,19 +1705,19 @@ R168
 R1
 R2
 R151
-Z208 8./Modulos/dispositivos/ROM/ROM32K.vhd
-Z209 F./Modulos/dispositivos/ROM/ROM32K.vhd
+Z207 8./Modulos/dispositivos/ROM/ROM32K.vhd
+Z208 F./Modulos/dispositivos/ROM/ROM32K.vhd
 l0
 L43
 VYc4^=NLgoXG<7H?^B_=Jh1
 !s100 Y0Eb<EfiYKB=@5Y7bHG?J2
 R6
 32
-R171
+R154
 !i10b 1
 R155
-Z210 !s90 -work|work|./Modulos/dispositivos/ROM/ROM32K.vhd|
-Z211 !s107 ./Modulos/dispositivos/ROM/ROM32K.vhd|
+Z209 !s90 -work|work|./Modulos/dispositivos/ROM/ROM32K.vhd|
+Z210 !s107 ./Modulos/dispositivos/ROM/ROM32K.vhd|
 !i113 1
 R11
 R12
@@ -1732,11 +1732,11 @@ Vd:S3c91ln>NDSn9R;21XP0
 !s100 >YF>D?8=R1U807d2h36N?2
 R6
 32
-R171
+R154
 !i10b 1
 R155
+R209
 R210
-R211
 !i113 1
 R11
 R12
@@ -1745,19 +1745,19 @@ R0
 R1
 R2
 R3
-Z212 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/UnidadeLogicaAritmetica/zerador16.vhd
-Z213 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/UnidadeLogicaAritmetica/zerador16.vhd
+Z211 8/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/UnidadeLogicaAritmetica/zerador16.vhd
+Z212 F/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/UnidadeLogicaAritmetica/zerador16.vhd
 l0
 L8
 V@A>j=[QNRTJR`QV_oBmIE2
 !s100 5[I:HNEI56WNfSm5f^c2U1
 R6
 32
-R197
+R196
 !i10b 1
-R192
-Z214 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/UnidadeLogicaAritmetica/zerador16.vhd|
-Z215 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/UnidadeLogicaAritmetica/zerador16.vhd|
+R191
+Z213 !s90 -reportprogress|300|-work|work|/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/UnidadeLogicaAritmetica/zerador16.vhd|
+Z214 !s107 /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl/Modulos/UnidadeLogicaAritmetica/zerador16.vhd|
 !i113 1
 R11
 R12
@@ -1771,11 +1771,11 @@ Vl3GCd6W?k4AEP36ScZDQO0
 !s100 XY4EVDd<e16hDRO`>_9ja2
 R6
 32
-R197
+R196
 !i10b 1
-R192
+R191
+R213
 R214
-R215
 !i113 1
 R11
 R12
