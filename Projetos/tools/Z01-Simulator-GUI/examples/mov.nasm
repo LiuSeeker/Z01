@@ -1,4 +1,3 @@
-
 ; Elementos de Sistemas : 2018a
 ; Rafael Corsi
 ; Hardware : Z0.1
@@ -50,3 +49,4 @@
 ; mov (A) -> S
   leaw %5, %A
   movw (%A), %S
+
