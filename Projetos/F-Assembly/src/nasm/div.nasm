@@ -3,7 +3,6 @@
 leaw $0, %A
 ;Mover o que ta em A[0] para D
 movw (%A), %D
-
 WHILE:
 leaw $1, %A
 ;Subtrai D - A[1] e salva em D

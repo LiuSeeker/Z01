@@ -9,26 +9,10 @@
 ; ou seja, o maior valor que estiver, ou em R0 ou R1 sera copiado para R2
 ; Estamos considerando número inteiros
 
-;Começo
 leaw $0, %A
 movw (%A), %D
-leaw $1, %A
-subw %D, (%A), %S
-leaw $MENOR, %A
-jg %S
-nop
 
-movw $0, %D
-leaw $1, %A
-movw (%A), %D
-leaw $2, %A
-movw %D, (%A)
-leaw $END, %A
-jmp
-nop
-
-MENOR:
-leaw $2, %A
-movw %D, (%A)
-
-END:
+WHILE:
+	leaw $1, %A
+	rsubw %D, (%A), %D
+	
