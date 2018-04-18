@@ -34,7 +34,6 @@ def assembler(jar, nasm, hack, mif):
     os.path.abspath(nasm)
     os.path.abspath(hack)
 
-
     if not os.path.exists(os.path.dirname(hack)):
         os.makedirs(os.path.dirname(hack))
 
@@ -48,7 +47,6 @@ def assembler(jar, nasm, hack, mif):
                     nNasm = nasm+filename
                     print("Compiling {} to {}".format(nNasm, nHack))
                     callJava(jar, nNasm, nHack)
-
                     if mif:
                         toMIF(nHack, nMif)
         else:
@@ -58,6 +56,7 @@ def assembler(jar, nasm, hack, mif):
         callJava(jar, nasm, hack)
         if(mif):
             toMIF(hack, os.path.splitext(hack)[0]+".mif")
+
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
