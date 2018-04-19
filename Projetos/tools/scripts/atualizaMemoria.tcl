@@ -7,7 +7,7 @@ puts stdout ""
 
 set DEV_NAME "@1: 5CE(BA4|FA4) (0x02B050DD)"
 
-set MIF "C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/F-Assembly/bin/hack/LCD.mif"
+set MIF "C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/F-Assembly/bin/hack/linha.mif"
 
 set JTAG "USB-Blaster \[USB-0\]"
 
