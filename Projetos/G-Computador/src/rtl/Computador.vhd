@@ -125,7 +125,7 @@ BEGIN
     locked   => PLL_LOCKED
      );
 
-	ROM32K : ROM32K PORT map (
+	ROM : ROM32K PORT map (
 							address => pcout,
 							clock => CLK_SLOW,
 							q => INSTRUCTION
@@ -142,11 +142,11 @@ BEGIN
 							pcout => PC
 	);
 
-	MemoryIO : MemoryIO PORT map (
+	MEMORY_MAPED : MemoryIO PORT map (
 							CLK_SLOW => CLK_SLOW,
 							CLK_FAST => CLK_FAST,
 
-							RST => RST_MEM ,
+							RST => RST_MEM,
 							ADDRESS => ADDRESS,
 							INPUT => INPUT,
 							LOAD => LOAD,
@@ -164,6 +164,7 @@ BEGIN
 							SW => SW,
 							LED => LEDR
 	);
+
   -- Resets
   RST_CPU <= RESET or (not LCD_INIT_OK) or (not PLL_LOCKED); -- REINICIA CPU
 	RST_MEM <= RESET or (not PLL_LOCKED);                      -- REINICIA MemoryIO
