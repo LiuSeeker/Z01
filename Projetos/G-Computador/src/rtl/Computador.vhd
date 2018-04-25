@@ -126,7 +126,7 @@ BEGIN
      );
 
 	ROM : ROM32K PORT map (
-							address => pcout,
+							address => PC,
 							clock => CLK_SLOW,
 							q => INSTRUCTION
 	);
