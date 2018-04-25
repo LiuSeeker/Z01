@@ -153,7 +153,7 @@ BEGIN
 							OUTPUT => OUTPUT_RAM,
 
 							LCD_CS_N => LCD_CS_N,
-							LDC_D => LCD_D,
+							LCD_D => LCD_D,
 							LCD_RD_N => LCD_RD_N,
 							LCD_RESET_N => LCD_RESET_N,
 							LCD_RS => LCD_RS,
