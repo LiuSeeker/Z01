@@ -116,6 +116,6 @@ begin
 
   outM <= s_ALUout;
   addressM <= s_regAout(14 downto 0);
-  program_counter_out <= s_pcout(14 downto 0);
+  pcout <= s_pcout(14 downto 0);
 
 end architecture;
