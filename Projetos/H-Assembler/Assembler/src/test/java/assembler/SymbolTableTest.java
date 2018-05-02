@@ -92,8 +92,11 @@ public class SymbolTableTest {
             assertTrue("Testando se Tabela de Símbolos CONTÉM R15",table.contains("R15"));
             assertTrue("Verificando se R15 vale 15 na Tabela de Símbolos",table.getAddress("R15")==15);
 
-            assertTrue("Testando se Tabela de Símbolos CONTÉM KBD",table.contains("KBD"));
-            assertTrue("Verificando se KBD vale 24576 na Tabela de Símbolos",table.getAddress("KBD")==24576);
+            assertTrue("Testando se Tabela de Símbolos CONTÉM LED",table.contains("LED"));
+            assertTrue("Verificando se LED vale 21184 na Tabela de Símbolos",table.getAddress("LED")==21184);
+
+            assertTrue("Testando se Tabela de Símbolos CONTÉM SW",table.contains("SW"));
+            assertTrue("Verificando se SW vale 21185 na Tabela de Símbolos",table.getAddress("LED")==21185);
 
             assertTrue("Testando se Tabela de Símbolos CONTÉM SCREEN",table.contains("SCREEN"));
             assertTrue("Verificando se SCREEN vale 16384 na Tabela de Símbolos",table.getAddress("SCREEN")==16384);
