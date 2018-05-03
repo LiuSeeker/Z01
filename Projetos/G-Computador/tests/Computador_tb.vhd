@@ -67,9 +67,7 @@ begin
     LCD_RESET_N => open,
     LCD_RS      => open,
     LCD_WR_N    => open,
-    LCD_on      => open,
-    key_clk     => '0',
-    key_data    => '0'
+    LCD_on      => open
     );
 
 end             rtl;

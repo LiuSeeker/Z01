@@ -47,5 +47,7 @@ script:
   #- python Projetos/D-UnidadeLogicaAritmetica/script/testeULA.py
   #- python Projetos/E-LogicaSequencial/script/testeLogicaSequencial.py
   #- python Projetos/F-Assembly/scripts/testeAssembly.py	
-   - python Projetos/G-Computador/script/testeControlUnit.py
-   - python Projetos/G-Computador/script/testeAssemblyMyCPU.py
+  # - python Projetos/G-Computador/script/testeControlUnit.py
+  # - python Projetos/G-Computador/script/testeAssemblyMyCPU.py
+  - python Projetos/H-Assembler/scripts/compileNasmMyAssembler.py
+  - python Projetos/H-Assembler/scripts/testeAssemblyMyAssembler.py
