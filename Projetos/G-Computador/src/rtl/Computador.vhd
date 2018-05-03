@@ -158,7 +158,7 @@ BEGIN
 							LCD_RESET_N => LCD_RESET_N,
 							LCD_RS => LCD_RS,
 							LCD_WR_N => LCD_WR_N,
-							LCD_ON => LCD_ON,
+							LCD_ON => OPEN,
 							LCD_INIT_OK => LCD_INIT_OK,
 
 							SW => SW,
