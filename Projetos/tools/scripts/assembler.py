@@ -22,8 +22,10 @@ jar = TOOLSPATH+"jar/Z01-Assembler.jar"
 
 def callJava(jar, nasm, hack):
     command = "java -jar " + jar + " -i " + nasm + " -o " + hack
-    proc = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
-    (out, err) = proc.communicate()
+    proc = subprocess.Popen(command, shell=True)
+    err = proc.wait()
+    return(err)
+    #(out, err) = proc.communicate()
    # os.system("java -jar " + jar + " -i " + nasm + " -o " + hack)
 
 def assembler(jar, nasm, hack, mif):
