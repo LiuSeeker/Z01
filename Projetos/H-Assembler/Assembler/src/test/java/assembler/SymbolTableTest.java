@@ -21,7 +21,6 @@ public class SymbolTableTest {
     /**
      * Create the test case
      *
-     * @param testName name of the test case
      */
     public SymbolTableTest() {
         table = new SymbolTable();
