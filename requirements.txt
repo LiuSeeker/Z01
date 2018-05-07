@@ -1,2 +1,3 @@
+termcolor
 vunit
 vunit_hdl
