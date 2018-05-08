@@ -1,7 +1,7 @@
 /**
  * Curso: Elementos de Sistemas
  * Arquivo: Assemble.java
- * Created by Luciano <lpsoares@insper.edu.br> 
+ * Created by Luciano <lpsoares@insper.edu.br>
  * Date: 04/02/2017
  *
  * 2018 @ Rafael Corsi
@@ -31,8 +31,7 @@ public class Assemble {
         this.debug = debug;
         inputFile  = inFile;
         hackFile   = new File(outFileHack);                      // Cria arquivo de saída .hack
-        outHACK    = new PrintWriter(new FileWriter(hackFile));  // Cria saída do print para
-                                                                 // o arquivo hackfile
+        outHACK    = new PrintWriter(new FileWriter(hackFile));  // Cria saída do print para o arquivo hackfile
         table      = new SymbolTable();                          // Cria e inicializa a tabela de simbolos
 
     }
@@ -45,8 +44,15 @@ public class Assemble {
      * Dependencia : Parser, SymbolTable
      */
     public void fillSymbolTable() throws FileNotFoundException, IOException {
-    }
+      Parser parse = new parser(inputFile);
 
+      while (parse.advance()){
+        if (parse.commandType(parse.command()) == Parser.CommandType.L_COMMAND){ //Verificando se é um comando L
+          String add_to_table = parse.label(parse.command()); //Criando string para adicionar à tabela de símbolos
+          table.addEntry(add_to_table, parse.instruction_index);
+        }
+      }
+    }
     /**
      * Segundo passo para a geração do código de máquina
      * Varre o código em busca de instruções do tipo A, C
@@ -55,8 +61,32 @@ public class Assemble {
      * Dependencias : Parser, Code
      */
     public void generateMachineCode() throws FileNotFoundException, IOException{
-        Parser parser = new Parser(inputFile);  // abre o arquivo e aponta para o começo
+        Parser parse = new Parser(inputFile);  // abre o arquivo e aponta para o começo
 
+        while (parse.advance()){
+          String instrucao = "0";
+          String instrucao_maquina = "";
+          String binario = "";
+          if (parse.commandType(parse.command()) == Parser.CommandType.A_COMMAND){
+              if (table.contains(parser.symbol(parser.command()))){
+                  binario = Code.toBinary(String.valueOf(table.getAddress(parse.symbol(parse.command()))));
+                  instrucao_maquina = instrucao + binario;
+                  outHACK.write(instrucao_maquina);
+              }
+              else{
+                int i = 0;
+                while (!table.containsValue(i)){
+                  i++;
+                }
+              }
+              else{
+                instrucao = "1";
+                binario = Code.comp(parse.instruction(parse.command()))+Code.dest(parse.instruction(parse.command()))+Code.jump(parse.instruction(parse.command()));
+                instrucao_maquina = instrucao + binario;
+                outHACK.write(instrucao_maquina);
+              }
+          }
+        }
     }
 
     /**
