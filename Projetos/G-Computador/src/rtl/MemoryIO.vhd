@@ -101,9 +101,9 @@ BEGIN
              '0';
   loadLCD <= '1' when (ADDRESS > "0011111111111111" and ADDRESS <= "0101001010111111") else
              '0';
-  loadLED <= '1' when (ADDRESS = "0101001011000000") else
+  loadLED <= '1' when (ADDRESS = "101001011000000") else
              '0';
-  sel_mux <= '1' when (ADDRESS = "0101001011000001") else
+  sel_mux <= '1' when (ADDRESS = "101001011000001") else
              '0';
 
   sw16 <= "000000" & sw;
@@ -115,10 +115,5 @@ BEGIN
 
   LED <= reg_out(9 downto 0); -- LED tem q ser um vetor de 10 bits (10 da direita)
                 -- o input do register até poderia ser de 10 bits para ser igual ao led, mas o register é de 16
-
-END logic;LCD_INIT_OK, LCD_CS_N, LCD_D, LCD_RD_N, LCD_RESET_N, LCD_RS, LCD_WR_N);
-
-	LED <= reg_out(9 downto 0); -- LED tem q ser um vetor de 10 bits (10 da direitra)
-								-- o input do register até poderia ser de 10 bits para ser igual ao led, mas o register é de 16
 
 END logic;
