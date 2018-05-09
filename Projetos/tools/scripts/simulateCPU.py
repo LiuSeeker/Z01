@@ -174,7 +174,7 @@ def simulateCPU(ramIn, romIn, ramOut, time, debug, verbose, rtlDir=PATH_WORK):
             v = " > NUL "
     else:
         if verbose is False:
-            v = " &> /dev/null "
+            v = " > /dev/null "
 
     c = ""
     if debug is False:
