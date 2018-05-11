@@ -22,7 +22,7 @@ public class CodeTest  {
     }
 	
     /**
-     * Teste para conversão para binário
+     * Teste para conversÃ£o para binÃ¡rio
      */
     @Test
     public void testCode_toBinary() {
@@ -49,7 +49,7 @@ public class CodeTest  {
     }
 
 	/**
-     * Teste para geração de código para Destino
+     * Teste para geraÃ§Ã£o de cÃ³digo para Destino
      */
     @Test
     public void testCode_Destine() {
@@ -118,7 +118,7 @@ public class CodeTest  {
     }
 
 	/**
-     * Teste para geração de código para Calculo
+     * Teste para geraÃ§Ã£o de cÃ³digo para Calculo
      */
     //@Ignore
     @Test
@@ -181,7 +181,7 @@ public class CodeTest  {
     }
 
 	/**
-     * Teste para geração de código para Calculo
+     * Teste para geraÃ§Ã£o de cÃ³digo para Calculo
      */
     @Test
     public void testCode_Jump() {
