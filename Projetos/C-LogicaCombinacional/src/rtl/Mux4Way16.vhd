@@ -13,17 +13,8 @@ end entity;
 
 architecture mux4_16 of Mux4Way16 is
 begin
-process (a,b,c,d,sel) is
-begin
-  if (sel(0) ='0' and sel(1) = '0') then
-      q <= a;
-  elsif (sel(0) ='1' and sel(1) = '0') then
-      q <= b;
-  elsif (sel(0) ='0' and sel(1) = '1') then
-      q <= c;
-  else
-      q <= d;
-  end if;
-  
-end process;
+    q<= a when (sel = "00") else
+    b when (sel = "01") else
+    c when (sel = "10") else 
+    d;
 end mux4_16;

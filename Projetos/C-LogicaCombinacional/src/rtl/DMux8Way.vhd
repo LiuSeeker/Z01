@@ -17,12 +17,12 @@ end entity;
 
 architecture jor of DMux8Way is
 begin
-q0 <= a when sel = "000" else '0';
-q1 <= a when sel = "001" else '0';
-q2 <= a when sel = "010" else '0';
-q3 <= a when sel = "011" else '0';
-q4 <= a when sel = "100" else '0';
-q5 <= a when sel = "101" else '0';
-q6 <= a when sel = "110" else '0';
-q7 <= a when sel = "111" else '0';
+	q0 <= a and not sel(2) and not sel(1) and not sel(0);
+	q1 <= a and not sel(2) and not sel(1) and sel(0);
+	q2 <= a and not sel(2) and sel(1) and not sel(0);
+	q3 <= a and not sel(2) and sel(1) and sel(0);
+	q4 <= a and sel(2) and not sel(1) and not sel(0);
+	q5 <= a and sel(2) and not sel(1) and sel(0);
+	q6 <= a and sel(2) and sel(1) and not sel(0);
+	q7 <= a and sel(2) and sel(1) and sel(0);
 end jor;

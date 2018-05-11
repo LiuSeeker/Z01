@@ -8,7 +8,7 @@ entity BarrelShifter16 is
 			size: in  STD_LOGIC_VECTOR(2 downto 0);    -- shift amount
 			q:    out STD_LOGIC_VECTOR(15 downto 0));  -- output vector (shifted)
 end entity;
-architecture BarrelShifter16_FOLKS of BarrelShifter16 is
+architecture BS of BarrelShifter16 is
 begin
 -- Setei ele para mover os bits na direção do dir e a quantidade size de Bits
 	q <= a when (size = "000") else
@@ -21,4 +21,4 @@ begin
 	     a(12 downto 0) & a(15 downto 13) when (dir = '0' and size = "011") else
 		  a(11 downto 0) & a(15 downto 12) when (dir = '0' and size = "100");
 
-end BarrelShifter16_FOLKS;
+end BS;

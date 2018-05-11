@@ -1,9 +1,9 @@
-# do /home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/5-Repositorios/Z01-Privado/Projetos/tools/Z01-Simulator-rtl-2/do/sim.do
+# do {C:\Users\jorge\Desktop\Insper\Z01-Coldzera\Projetos\tools\Z01-Simulator-rtl-2\do\sim.do}
 # 1
 # 1
 # 1
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:55:50 on Apr 26,2018
+# Start time: 08:24:51 on May 11,2018
 # vcom -work work Modulos/Dispositivos/RAM/RAM16K.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -11,10 +11,10 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM16K
 # -- Compiling architecture SYN of ram16k
-# End time: 10:55:51 on Apr 26,2018, Elapsed time: 0:00:01
+# End time: 08:24:51 on May 11,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:55:51 on Apr 26,2018
+# Start time: 08:24:52 on May 11,2018
 # vcom -work work Modulos/Dispositivos/ROM/ROM32K.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,20 +22,20 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity ROM32K
 # -- Compiling architecture SYN of rom32k
-# End time: 10:55:51 on Apr 26,2018, Elapsed time: 0:00:00
+# End time: 08:24:52 on May 11,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:55:51 on Apr 26,2018
+# Start time: 08:24:52 on May 11,2018
 # vcom -reportprogress 300 -work work Modulos/Dispositivos/PLL/PLL_sim/PLL.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PLL
 # -- Compiling architecture RTL of PLL
-# End time: 10:55:51 on Apr 26,2018, Elapsed time: 0:00:00
+# End time: 08:24:52 on May 11,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim work.computador_tb 
-# Start time: 10:55:51 on Apr 26,2018
+# Start time: 08:24:52 on May 11,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -83,7 +83,6 @@
 # This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/DISPLAY/LCD_WR_N has no driver.
 # This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /computador_tb/c1/MEMORY_MAPED
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -92,5 +91,1355 @@
 #    Time: 0 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
-# End time: 10:55:51 on Apr 26,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 12
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 909500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 909500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 909700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 909700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 909700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 909700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 909700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 909700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 909900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 909900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 909900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 909900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 909900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 909900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 910500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 910900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 910900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 911100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 911100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 911100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 911100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 911100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 911100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 911300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 911300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 911300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 911300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 911300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 911300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 911500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 911500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 911500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 911500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 911500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 911500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 911500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 918500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 918500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 918700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 918700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 918700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 918700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 918700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 918700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 918900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 918900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 918900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 918900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 918900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 918900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 919500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 919900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 919900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 920100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 920100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 920100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 920300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 920300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 920300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 920500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 920500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 920500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 920500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 928500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 928500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 928700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 928700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 928700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 928700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 928700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 928700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 928900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 928900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 928900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 928900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 928900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 928900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 929500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 929900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 929900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 930100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 930100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 930100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 930100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 930100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 930100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 930300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 930300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 930300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 930300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 930300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 930300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 930500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 930500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 930500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 930500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 930500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 930500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 930500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 931500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 931500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 931700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 931700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 931700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 931700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 931700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 931700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 931900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 931900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 931900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 931900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 931900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 931900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 932500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 932900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 932900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 933500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 933900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 933900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 934100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 934100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 934100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 934100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 934100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 934100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 934300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 934300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 934300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 934300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 934300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 934300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 934500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 934500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 934500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 934500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 934500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 934500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 934500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 945500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 945500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 945700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 945700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 945700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 945700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 945700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 945700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 945900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 945900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 945900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 945900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 945900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 945900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 946500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 946900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 946900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 947100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 947100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 947100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 947100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 947100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 947100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 947300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 947300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 947300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 947300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 947300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 947300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 947500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 947500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 947500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 947500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 947500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 947500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 947500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 956500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 956500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 956700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 956700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 956700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 956700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 956700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 956700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 956900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 956900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 956900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 956900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 956900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 956900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 957500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 957900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 957900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 958100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 958100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 958100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 958300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 958300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 958300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 958500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 958500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 958500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 958500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 959500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 959500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 959700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 959700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 959700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 959700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 959700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 959700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 959900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 959900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 959900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 959900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 959900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 959900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 960500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 960900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 960900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 961100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 961100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 961100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 961100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 961100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 961100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 961300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 961300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 961300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 961300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 961300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 961300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 961500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 961500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 961500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 961500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 961500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 961500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 961500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 970500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 970500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 970700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 970700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 970700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 970700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 970700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 970700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 970900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 970900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 970900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 970900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 970900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 970900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 970900 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 970900 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 971500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 971900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 971900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 972100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 972100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 972100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 972100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 972100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 972100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 972300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 972300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 972300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 972300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 972300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 972300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 972500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 972500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 972500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 972500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 972500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 972500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 972500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 982500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 982500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 982700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 982700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 982700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 982700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 982700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 982700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 982900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 982900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 982900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 982900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 982900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 982900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 983500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 983900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 983900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 984100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 984100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 984100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 984100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 984100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 984100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 984300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 984300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 984300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 984300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 984300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 984300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 984500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 984500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 984500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 984500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 984500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 984500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 984500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 994500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 994500 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 994700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 994700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 994700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 994700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 994700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 994700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 994900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 994900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 994900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 994900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 994900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 994900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 994900 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 994900 ps  Iteration: 4  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 995500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995700 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 995900 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 996100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 996100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 996100 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 996300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 996300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 996300 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 996500 ps  Iteration: 1  Instance: /computador_tb/c1/MEMORY_MAPED
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 996500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 996500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 996500 ps  Iteration: 2  Instance: /computador_tb/c1/MEMORY_MAPED/RAM/altsyncram_component
+# End time: 08:24:55 on May 11,2018, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 686

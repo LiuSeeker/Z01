@@ -1,8 +1,11 @@
-; InicializaÃ§Ã£o para VM
+; Inicialização para VM
 leaw $Main.main, %A
 jmp
 nop
-; 0 - Declarando funÃ§Ã£o mult
+; 0 - Declarando função Main.main
+Main.main:
+; End
+; 1 - Declarando função mult
 mult:
 leaw $0,%A
 movw %A,%D
@@ -22,7 +25,7 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 1 - PUSH constant 0
+; 2 - PUSH constant 0
 leaw $0,%A
 movw %A,%D
 leaw $SP,%A
@@ -32,7 +35,7 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 2 - POP local 0
+; 3 - POP local 0
 leaw $SP,%A
 movw (%A),%D
 decw %D
@@ -49,7 +52,7 @@ movw (%A),%D
 leaw $R15,%A
 movw (%A),%A
 movw %D,(%A)
-; 3 - PUSH argument 1
+; 4 - PUSH argument 1
 leaw $1,%A
 movw %A,%D
 leaw $ARG,%A
@@ -62,7 +65,7 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 4 - POP local 1
+; 5 - POP local 1
 leaw $SP,%A
 movw (%A),%D
 decw %D
@@ -81,7 +84,7 @@ movw (%A),%A
 movw %D,(%A)
 ; Label (marcador)
 mult.mult.loop:
-; 5 - PUSH constant 0
+; 6 - PUSH constant 0
 leaw $0,%A
 movw %A,%D
 leaw $SP,%A
@@ -91,7 +94,7 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 6 - PUSH local 1
+; 7 - PUSH local 1
 leaw $1,%A
 movw %A,%D
 leaw $LCL,%A
@@ -104,7 +107,7 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 7 - EQ
+; 8 - EQ
 leaw $SP,%A
 movw (%A),%D
 decw %D
@@ -128,7 +131,7 @@ leaw $SP,%A
 subw (%A),$1,%A
 movw $-1,(%A)
 EQ2mult0:
-; 8 - Goto Condicional
+; 9 - Goto Condicional
 leaw $SP,%A
 movw (%A),%D
 decw %D
@@ -138,7 +141,7 @@ movw (%A),%D
 leaw $mult.mult.end,%A
 jne %D
 nop
-; 9 - PUSH local 0
+; 10 - PUSH local 0
 leaw $0,%A
 movw %A,%D
 leaw $LCL,%A
@@ -151,7 +154,7 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 10 - PUSH argument 0
+; 11 - PUSH argument 0
 leaw $0,%A
 movw %A,%D
 leaw $ARG,%A
@@ -164,7 +167,7 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 11 - ADD
+; 12 - ADD
 leaw $SP,%A
 movw (%A),%D
 decw %D
@@ -175,7 +178,7 @@ leaw $SP,%A
 subw (%A),$1,%A
 addw (%A),%D,%D
 movw %D,(%A)
-; 12 - POP local 0
+; 13 - POP local 0
 leaw $SP,%A
 movw (%A),%D
 decw %D
@@ -192,7 +195,7 @@ movw (%A),%D
 leaw $R15,%A
 movw (%A),%A
 movw %D,(%A)
-; 13 - PUSH local 1
+; 14 - PUSH local 1
 leaw $1,%A
 movw %A,%D
 leaw $LCL,%A
@@ -205,7 +208,7 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 14 - PUSH constant 1
+; 15 - PUSH constant 1
 leaw $1,%A
 movw %A,%D
 leaw $SP,%A
@@ -215,7 +218,7 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 15 - SUB
+; 16 - SUB
 leaw $SP,%A
 movw (%A),%D
 decw %D
@@ -226,7 +229,7 @@ leaw $SP,%A
 subw (%A),$1,%A
 subw (%A),%D,%D
 movw %D,(%A)
-; 16 - POP local 1
+; 17 - POP local 1
 leaw $SP,%A
 movw (%A),%D
 decw %D
@@ -243,13 +246,13 @@ movw (%A),%D
 leaw $R15,%A
 movw (%A),%A
 movw %D,(%A)
-; 17 - Goto Incondicional
+; 18 - Goto Incondicional
 leaw $mult.mult.loop,%A
 jmp
 nop
 ; Label (marcador)
 mult.mult.end:
-; 18 - PUSH local 0
+; 19 - PUSH local 0
 leaw $0,%A
 movw %A,%D
 leaw $LCL,%A
@@ -262,8 +265,8 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 19 - Retorno de funÃ§Ã£o
-; Retorno de funÃ§Ã£o 
+; 20 - Retorno de função
+; Retorno de função 
 leaw $LCL,%A
 movw (%A),%D
 leaw $R13,%A
@@ -322,145 +325,4 @@ leaw $R14,%A
 movw (%A),%A
 jmp
 nop
-; End
-; 20 - Declarando funÃ§Ã£o Main.main
-Main.main:
-; 21 - PUSH constant 14
-leaw $14,%A
-movw %A,%D
-leaw $SP,%A
-movw (%A),%A
-movw %D,(%A)
-leaw $SP,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-; 22 - PUSH constant 2
-leaw $2,%A
-movw %A,%D
-leaw $SP,%A
-movw (%A),%A
-movw %D,(%A)
-leaw $SP,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-; 23 - ADD
-leaw $SP,%A
-movw (%A),%D
-decw %D
-movw %D,(%A)
-movw (%A),%A
-movw (%A),%D
-leaw $SP,%A
-subw (%A),$1,%A
-addw (%A),%D,%D
-movw %D,(%A)
-; 24 - PUSH constant 8
-leaw $8,%A
-movw %A,%D
-leaw $SP,%A
-movw (%A),%A
-movw %D,(%A)
-leaw $SP,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-; 25 - PUSH constant 1
-leaw $1,%A
-movw %A,%D
-leaw $SP,%A
-movw (%A),%A
-movw %D,(%A)
-leaw $SP,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-; 26 - NEG
-leaw $SP,%A
-subw (%A),$1,%A
-movw (%A),%D
-negw %D
-movw %D,(%A)
-; 27 - ADD
-leaw $SP,%A
-movw (%A),%D
-decw %D
-movw %D,(%A)
-movw (%A),%A
-movw (%A),%D
-leaw $SP,%A
-subw (%A),$1,%A
-addw (%A),%D,%D
-movw %D,(%A)
-; 28 - chamada de funcao mult
-leaw $mult.ret.1,%A
-movw %A,%D
-leaw $SP,%A
-movw (%A),%A
-movw %D,(%A)
-leaw $SP,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-leaw $LCL,%A
-movw (%A),%D
-leaw $SP,%A
-movw (%A),%A
-movw %D,(%A)
-leaw $SP,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-leaw $ARG,%A
-movw (%A),%D
-leaw $SP,%A
-movw (%A),%A
-movw %D,(%A)
-leaw $SP,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-leaw $THIS,%A
-movw (%A),%D
-leaw $SP,%A
-movw (%A),%A
-movw %D,(%A)
-leaw $SP,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-leaw $THAT,%A
-movw (%A),%D
-leaw $SP,%A
-movw (%A),%A
-movw %D,(%A)
-leaw $SP,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-leaw $7,%A
-movw %A,%D
-leaw $SP,%A
-movw (%A),%A
-subw %A,%D,%D
-leaw $ARG,%A
-movw %D,(%A)
-leaw $SP,%A
-movw (%A),%D
-leaw $LCL,%A
-movw %D,(%A)
-leaw $mult,%A
-jmp
-nop
-mult.ret.1:
-; 29 - POP temp 1
-leaw $SP,%A
-movw (%A),%D
-decw %D
-movw %D,(%A)
-movw (%A),%A
-movw (%A),%D
-leaw $6,%A
-movw %D,(%A)
 ; End

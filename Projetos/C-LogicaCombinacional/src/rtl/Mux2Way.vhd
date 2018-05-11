@@ -17,5 +17,5 @@ end entity;
 architecture jor of Mux2Way is
 begin
 --Logica para Mux2Way
-q <= (a and (not sel)) or (b and sel);
+q <= a when (sel = '0') else b when (sel = '1');
 end jor;

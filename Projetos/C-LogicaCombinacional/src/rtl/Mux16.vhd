@@ -18,7 +18,6 @@ architecture jor of Mux16 is
 begin
 
 --Lógica para funcionamento do Mux16
-q <= a when sel = '0' else
-	  b;
+q <= a when (sel = '0') else b;
 	  
 end jor;

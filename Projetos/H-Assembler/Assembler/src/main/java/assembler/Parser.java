@@ -4,7 +4,9 @@
  */
 package assembler;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.io.File;
 
 /**
  * Encapsula o cÃƒÂ³digo de leitura. Carrega as instruÃƒÂ§ÃƒÂµes na linguagem assembly,
@@ -27,13 +29,13 @@ public class Parser {
 	 * @param file arquivo NASM que serÃƒÂ¡ feito o parser.
 	 */
 	public Parser(String file) {
-		this.file = file;
 
 		try {
-			scan = new Scanner(file);
+			File data = new File(file);
+			this.scan = new Scanner(data);
 		}
-		catch (Exception e) {
-			System.out.println("Arquivo nÃƒÂ£o encontrado - Error");
+		catch (FileNotFoundException e) {
+			System.out.println("File not found - Error");
 			e.printStackTrace(); // diz qual foi o erro que ocorreu
 		}
 	}
@@ -45,26 +47,37 @@ public class Parser {
 	 * @return Verdadeiro se ainda hÃƒÂ¡ instruÃƒÂ§ÃƒÂµes, Falso se as instruÃƒÂ§ÃƒÂµes terminaram.
 	 */
 	public Boolean advance() {
-		if (scan.hasNextLine()) {
-			String line = scan.nextLine();
-			line = line.trim(); // remove espaÃƒÂ§os em branco
-			while (scan.hasNextLine() && (line.equals("") || line.equals("\n") || line.startsWith(";"))) {
-				line = scan.nextLine();
-				line = line.trim();
-			}
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
+        while(scan.hasNextLine()){
+            String line = scan.nextLine();
+
+            line = line.trim();
+
+            if (!line.isEmpty() && line.charAt(0) != ';'  ) {
+                line.replace("\t", "");
+                line = line.replaceAll(" +", " ");
+                int ind = line.length();
+                for (int i = 0; i <line.length() ; i++) {
+                    if (line.charAt(i) == ';'){
+                        ind = i-1;
+
+                    }
+
+                }
+//                System.out.println(line);
+                this.line = line.substring(0,(ind));
+                return true;
+            }
+
+            }
+        return false;
+        }
 
 	/**
 	 * Retorna o comando "intruÃƒÂ§ÃƒÂ£o" atual (sem o avanÃƒÂ§o)
 	 * @return a instruÃƒÂ§ÃƒÂ£o atual para ser analilisada
 	 */
 	public String command() {
-		return line;
+		return this.line;
 	}
 
 	/**
