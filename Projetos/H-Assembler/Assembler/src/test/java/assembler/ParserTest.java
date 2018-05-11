@@ -32,7 +32,7 @@ public class ParserTest {
     }
 
     /**
-     * Teste para a instrução commandType
+     * Teste para a instruÃ§Ã£o commandType
      */
     @Test
     public void testParser_commandType() {
@@ -64,7 +64,7 @@ public class ParserTest {
     }
 
     /**
-     * Teste para a instrução label
+     * Teste para a instruÃ§Ã£o label
      */
     @Test
     public void testParser_label() {
@@ -87,7 +87,7 @@ public class ParserTest {
     }
      
     /**
-     * Teste para a instrução symbol
+     * Teste para a instruÃ§Ã£o symbol
      */
     @Test
     public void testParser_symbol() {
@@ -110,7 +110,7 @@ public class ParserTest {
     }       
 
     /**
-     * Teste para a instrução instruction
+     * Teste para a instruÃ§Ã£o instruction
      */
     @Test
     public void testParser_instruction() {
@@ -146,7 +146,7 @@ public class ParserTest {
     }  
 
     /**
-     * Teste para a instrução instruction
+     * Teste para a instruÃ§Ã£o instruction
      */
     @Test
     public void testParser_advance() {
