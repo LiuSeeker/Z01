@@ -92,7 +92,21 @@ SIGNAL state : State_Type;    -- Create a signal that uses
 
 BEGIN
 
+process
+begin
+  LCD_INIT_OK  <= '0';
+  wait until clk_slow = '0';
+  LCD_INIT_OK  <= '1';
+  wait ;
+end process;
 
-LCD_INIT_OK  <= '1';
 
+process(CLK_FAST)
+begin
+  if(rising_edge(CLK_FAST)) then
+     if (LOAD = '1') then
+        LCD_D <= input;
+      end IF;
+  end if;
+end process;
 END logic;
