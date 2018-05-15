@@ -35,6 +35,7 @@ ARCHITECTURE rtl OF Computador_tb IS
     LCD_WR_N     : OUT   STD_LOGIC;
 		LCD_ON       : OUT   STD_LOGIC	-- liga e desliga o LCD
 
+		-- Tecl => key_clk      : IN    STD_LOGIC;         -- clock signal from PS/2 keyboard
     );
   end component;
 
@@ -48,7 +49,7 @@ begin
   process
   begin
     reset_n <= '0';
-    wait for 500 ns;
+    wait for 1 ns;
     reset_n <= '1';
     wait;
   end process;
