@@ -70,4 +70,3 @@ if __name__ == "__main__":
     jarAssembler = TOOLSPATH+"jar/Z01-Assembler.jar"
     jarVM = TOOLSPATH+"jar/Z01-VMTranslator.jar"
     testeAssembly(jarAssembler, jarVM, vmDir=vmDir, testDir=testDir, nasmDir=nasm, hackDir=hack, gui=gui, verbose=verbose)
-

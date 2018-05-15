@@ -33,11 +33,8 @@ ARCHITECTURE rtl OF Computador_tb IS
     LCD_RESET_N  : OUT   STD_LOGIC;
     LCD_RS       : OUT   STD_LOGIC;	      -- (DCx) 0 : reg, 1: command
     LCD_WR_N     : OUT   STD_LOGIC;
-		LCD_ON       : OUT   STD_LOGIC;	-- liga e desliga o LCD
+		LCD_ON       : OUT   STD_LOGIC	-- liga e desliga o LCD
 
-		-- Tecl => key_clk      : IN    STD_LOGIC;         -- clock signal from PS/2 keyboard
-		key_clk      : IN    STD_LOGIC;         -- clock signal from PS/2 keyboard
-		key_data     : IN    STD_LOGIC          -- data signal from PS/2 keyboard
     );
   end component;
 
