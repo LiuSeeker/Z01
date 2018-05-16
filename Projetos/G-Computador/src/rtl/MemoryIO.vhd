@@ -97,7 +97,7 @@ SIGNAL loadRAM, loadLCD, loadLED, sel_mux: STD_LOGIC;
 BEGIN
   address14 <= ADDRESS(13 downto 0); -- address para ser usado no SCREEN
 
-  loadRAM <= '1' when (ADDRESS <= "0011111111111111") else
+  loadRAM <= '1' when (ADDRESS < "0100000000000000") else
              '0';
   loadLCD <= '1' when (ADDRESS > "0011111111111111" and ADDRESS <= "0101001010111111") else
              '0';
