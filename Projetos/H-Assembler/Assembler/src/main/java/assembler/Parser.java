@@ -112,11 +112,26 @@ public class Parser {
 	 * @return somente o sÃƒÂ­mbolo ou o valor nÃƒÂºmero da instruÃƒÂ§ÃƒÂ£o.
 	 */
 	public String symbol(String command) {
-		String symbol = "";
-		symbol = command.substring(command.indexOf("%") + 1);
-		symbol = symbol.substring(0, symbol.indexOf(","));
+        String simb = "";
+        Integer inde = 0;
+        if(commandType(command) == CommandType.A_COMMAND){
 
-		return symbol;
+            for (int i = 0; i <command.length() ; i++) {
+                if(command.charAt(i)=='$'){
+                    inde = i+1;
+                }
+            }
+            String newcom= command.substring(inde,command.length());
+            for (int i = 0; i <newcom.length() ; i++) {
+
+                if(newcom.charAt(i)==' ' || newcom.charAt(i) == ','){
+                    break;
+                }
+                simb+=newcom.charAt(i);
+
+            }
+        }
+        return simb;
 	}
 
 	/**
