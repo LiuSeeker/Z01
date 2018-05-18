@@ -97,13 +97,13 @@ SIGNAL loadRAM, loadLCD, loadLED, sel_mux: STD_LOGIC;
 BEGIN
   address14 <= ADDRESS(13 downto 0); -- address para ser usado no SCREEN
 
-  loadRAM <= '1' when (ADDRESS < "0100000000000000") else
+  loadRAM <= '1' when (ADDRESS <= std_logic_vector(to_unsigned(16383,15))) else  -- "0011111111111111"
              '0';
-  loadLCD <= '1' when (ADDRESS > "0011111111111111" and ADDRESS <= "0101001010111111") else
+  loadLCD <= '1' when (ADDRESS >= std_logic_vector(to_unsigned(16384,15)) and ADDRESS <= std_logic_vector(to_unsigned(21183,15))) else
              '0';
-  loadLED <= '1' when (ADDRESS = "101001011000000") else
+  loadLED <= '1' when (ADDRESS = std_logic_vector(to_unsigned(21184,15))) else
              '0';
-  sel_mux <= '1' when (ADDRESS = "101001011000001") else
+  sel_mux <= '1' when (ADDRESS = std_logic_vector(to_unsigned(21185,15))) else
              '0';
 
   sw16 <= "000000" & sw;
