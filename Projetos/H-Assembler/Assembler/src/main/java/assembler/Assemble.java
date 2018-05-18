@@ -90,7 +90,7 @@ public class Assemble {
         	String[] mne = parse.instruction(comando);
         	
         	
-        	if (parse.commandType(comando) == Parser.CommandType.A_COMMAND){
+        	if (parse.commandType(comando).equals(Parser.CommandType.A_COMMAND)){
               if (table.contains(symbol)){
                   binario = Code.toBinary(String.valueOf(table.getAddress(symbol)));
                   instrucao_maquina = instrucao + binario;

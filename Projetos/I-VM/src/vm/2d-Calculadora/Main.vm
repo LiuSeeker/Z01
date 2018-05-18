@@ -22,4 +22,6 @@ function Main.main 0
 	push constant 3
 	push constant 3
 	call pow 2
-	pop temp 1
+	pop temp 2
+	label END
+	goto END

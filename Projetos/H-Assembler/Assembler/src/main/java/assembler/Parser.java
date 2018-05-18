@@ -14,7 +14,6 @@ import java.io.File;
  * AlÃƒÂ©m disso, remove todos os espaÃƒÂ§os em branco e comentÃƒÂ¡rios.
  */
 public class Parser {
-	String file;
 	Scanner scan;
 	String line;
 
@@ -128,7 +127,7 @@ public class Parser {
 	 */
 	public String label(String command) {
 		String label = "";
-		label = command.substring(0,-1);
+		label = command.substring(0,command.length()-1);
 
 		return label;
 	}

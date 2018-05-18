@@ -26,5 +26,6 @@ function Main.main 0
 	push constant 1
 	sub
 	call mult 2
+	pop temp 1
 	label END
 	goto END
