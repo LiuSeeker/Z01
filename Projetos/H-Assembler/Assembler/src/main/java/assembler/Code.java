@@ -22,27 +22,25 @@ public class Code {
     	String d_m = "0"; // destino da memória
     	int tamanho = mnemnonic.length;
     	
-    	if (mnemnonic[0] == "movw" ){
+    	if (mnemnonic[0].equals("movw")){
 	    	for (int i=2;i < tamanho; i++){
-	    		if (mnemnonic[i] == "%A"){
+	    		if (mnemnonic[i].equals("%A")){
 	    			d_a = "1";
-	    		}else if (mnemnonic[i] == "%S"){
+	    		}else if (mnemnonic[i].equals("%S")){
 					d_s = "1";
-	    		}else if (mnemnonic[i] == "%D"){
+	    		}else if (mnemnonic[i].equals("%D")){
 					d_d = "1";
-	    		}else if (mnemnonic[i] == "(%A)"){
+	    		}else if (mnemnonic[i].equals("(%A)")){
 					d_m = "1";}
 	    	}
-    	}else if (mnemnonic[0] == "subw" || mnemnonic[0] == "rsubw" || mnemnonic[0] == "addw" || 
-    			 mnemnonic[0] == "incw" || mnemnonic[0] == "decw" || mnemnonic[0] == "notw" || 
-    			 mnemnonic[0] == "negw" || mnemnonic[0] == "orw" || mnemnonic[0] == "andw"){
-    		if (mnemnonic[mnemnonic.length -1] == "%A"){
+    	}else if (!mnemnonic[0].equals("movw")){
+    		if (mnemnonic[tamanho -1].equals("%A")){
     			d_a = "1";}
-    		else if (mnemnonic[tamanho-1] == "%S"){
+    		else if (mnemnonic[tamanho-1].equals("%S")){
 				d_s = "1";}
-    		else if (mnemnonic[tamanho-1] == "%D"){
+    		else if (mnemnonic[tamanho-1].equals("%D")){
 				d_d = "1";}
-    		else if (mnemnonic[tamanho-1] == "(%A)"){
+    		else if (mnemnonic[tamanho-1].equals("(%A)")){
 				d_m = "1";}
     	}  	
     	String resultado = d_a + d_s + d_d + d_m;
@@ -53,20 +51,20 @@ public class Code {
     	String a = "0";
     	String b = "0";
     	
-    	if (mnemnonic[1] == "%A" && mnemnonic[2]=="%D"||
-    			mnemnonic[1] == "%D" && mnemnonic[2]=="%A"){
+    	if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")||
+    			mnemnonic[1].equals("%D") && mnemnonic[2].equals("%A")){
     			a = "0";
     			b = "0";
-    		}else if (mnemnonic[1] == "%A" && mnemnonic[2]=="%S"||
-    				  mnemnonic[1] == "%S" && mnemnonic[2]=="%A"){
+    		}else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%S")||
+    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("%A")){
     			a = "0";
     			b = "1";
-    		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%D"||
-    				  mnemnonic[1] == "%D" && mnemnonic[2]=="(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")||
+    				  mnemnonic[1].equals("%D") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "0";
-    		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%S"||
-    				  mnemnonic[1] == "%S" && mnemnonic[2]=="(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%S")||
+    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "1";
     		}
@@ -84,253 +82,253 @@ public class Code {
     	String b = "0";
     	String c = "000000";
     
-    	if (mnemnonic[0] == "movw"){ //------------------------------------------------------
-    		if (mnemnonic[1] == "%A"){
+    	if (mnemnonic[0].equals("movw")){ //------------------------------------------------------
+    		if (mnemnonic[1].equals("%A")){
     			a = "0";
     			b = "0";
     			c = "110000";
-    		}else if (mnemnonic[1] == "%D"){
+    		}else if (mnemnonic[1].equals("%D")){
     			a = "0";
     			b = "0";
     			c = "001100";
-    		}else if (mnemnonic[1] == "%S"){
+    		}else if (mnemnonic[1].equals("%S")){
     			a = "0";
     			b = "1";
     			c = "001100";
-    		}else if (mnemnonic[1] == "(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)")){
     			a = "1";
     			b = "0";
     			c = "110000";
     		}
     		
-    	}else if (mnemnonic[0] == "addw"){ //------------------------------------------------------
+    	}else if (mnemnonic[0].equals("addw")){ //------------------------------------------------------
     		c = "000010";
-    		if (mnemnonic[1] == "%A" && mnemnonic[2]=="%D"||
-    			mnemnonic[1] == "%D" && mnemnonic[2]=="%A"){
+    		if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")||
+    			mnemnonic[1].equals("%D") && mnemnonic[2].equals("%A")){
     			a = "0";
     			b = "0";
-    		}else if (mnemnonic[1] == "%A" && mnemnonic[2]=="%S"||
-    				  mnemnonic[1] == "%S" && mnemnonic[2]=="%A"){
+    		}else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%S")||
+    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("%A")){
     			a = "0";
     			b = "1";
-    		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%D"||
-    				  mnemnonic[1] == "%D" && mnemnonic[2]=="(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")||
+    				  mnemnonic[1].equals("%D") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "0";
-    		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%S"||
-    				  mnemnonic[1] == "%S" && mnemnonic[2]=="(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%S")||
+    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "1";
     		}
     		
-    	}else if (mnemnonic[0] == "subw"){ //------------------------------------------------------
+    	}else if (mnemnonic[0].equals("subw")){ //------------------------------------------------------
     		c = "010011";
     		String i0 = "$0";
     		String i1 = "$1";
     		String i2 = "$-1";
-    		if (mnemnonic[1] == "%A" && mnemnonic[2]=="%D"||
-    			mnemnonic[1] == "%D" && mnemnonic[2]=="%A"){
+    		if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")||
+    			mnemnonic[1].equals("%D") && mnemnonic[2].equals("%A")){
     			a = "0";
     			b = "0";
-    		}else if (mnemnonic[1] == "%A" && mnemnonic[2]=="%S"||
-    				  mnemnonic[1] == "%S" && mnemnonic[2]=="%A"){
+    		}else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%S")||
+    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("%A")){
     			a = "0";
     			b = "1";
-    		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%D"||
-    				  mnemnonic[1] == "%D" && mnemnonic[2]=="(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")||
+    				  mnemnonic[1].equals("%D") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "0";
-    		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%S"||
-    				  mnemnonic[1] == "%S" && mnemnonic[2]=="(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%S")||
+    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "1";
     			
-    		}else if ((mnemnonic[2]==i0||mnemnonic[2]==i1||mnemnonic[2]==i2) && mnemnonic [1] == "(%A)"){
+    		}else if ((mnemnonic[2].equals(i0)||mnemnonic[2].equals(i1)||mnemnonic[2].equals(i2)) && mnemnonic [1].equals("(%A)")){
     			a = "1";
     			b = "0";
     			c = "110010";
     			
-    		}else if ((mnemnonic[2]==i0||mnemnonic[2]==i1||mnemnonic[2]==i2) && mnemnonic [1] == "%A"){
+    		}else if ((mnemnonic[2].equals(i0)||mnemnonic[2].equals(i1)||mnemnonic[2].equals(i2)) && mnemnonic [1].equals("%A")){
     			a = "0";
     			b = "0";
     			c = "110010";
     			
-    		}else if ((mnemnonic[2]==i0||mnemnonic[2]==i1||mnemnonic[2]==i2) && mnemnonic [1] == "%D"){
+    		}else if ((mnemnonic[2].equals(i0)||mnemnonic[2].equals(i1)||mnemnonic[2].equals(i2)) && mnemnonic [1].equals("%D")){
     			a = "0";
     			b = "0";
     			c = "000010";
     			
-    		}else if ((mnemnonic[2]==i0||mnemnonic[2]==i1||mnemnonic[2]==i2) && mnemnonic [1] == "%S"){
+    		}else if ((mnemnonic[2].equals(i0)||mnemnonic[2].equals(i1)||mnemnonic[2].equals(i2)) && mnemnonic [1].equals("%S")){
     			a = "0";
     			b = "1";
     			c = "000010";
     		}
     		
-    	}else if (mnemnonic[0] == "rsubw"){ //------------------------------------------------------
+    	}else if (mnemnonic[0].equals("rsubw")){ //------------------------------------------------------
     		c = "000111";
-    		if (mnemnonic[1] == "%A" && mnemnonic[2]=="%D"||
-    			mnemnonic[1] == "%D" && mnemnonic[2]=="%A"){
+    		if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")||
+    			mnemnonic[1].equals("%D") && mnemnonic[2].equals("%A")){
     			a = "0";
     			b = "0";
-    		}else if (mnemnonic[1] == "%A" && mnemnonic[2]=="%S"||
-    				  mnemnonic[1] == "%S" && mnemnonic[2]=="%A"){
+    		}else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%S")||
+    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("%A")){
     			a = "0";
     			b = "1";
-    		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%D"||
-    				  mnemnonic[1] == "%D" && mnemnonic[2]=="(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")||
+    				  mnemnonic[1].equals("%D") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "0";
-    		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%S"||
-    				  mnemnonic[1] == "%S" && mnemnonic[2]=="(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%S")||
+    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "1";
     		}
     		
-    	}else if (mnemnonic[0] == "decw"){ //------------------------------------------------------
-    		if(mnemnonic[1] == "%A"){
+    	}else if (mnemnonic[0].equals("decw")){ //------------------------------------------------------
+    		if(mnemnonic[1].equals("%A")){
     			a = "0";
     			b = "0";
     			c = "110010";
     			
-    		}else if(mnemnonic[1] == "%D"){
+    		}else if(mnemnonic[1].equals("%D")){
     			a = "0";
     			b = "0";
     			c = "001110";
-    		}else if(mnemnonic[1] == "%S"){
+    		}else if(mnemnonic[1].equals("%S")){
     			a = "0";
     			b = "1";
     			c = "001110";
-    		}else if(mnemnonic[1] == "(%A)"){
+    		}else if(mnemnonic[1].equals("(%A)")){
     			a = "1";
     			b = "0";
     			c = "110010";
     		}
     		
-    	}else if (mnemnonic[0] == "incw"){ //------------------------------------------------------
-    		if(mnemnonic[1] == "%A"){
+    	}else if (mnemnonic[0].equals("incw")){ //------------------------------------------------------
+    		if(mnemnonic[1].equals("%A")){
     			a = "0";
     			b = "0";
     			c = "110111";
     			
-    		}else if(mnemnonic[1] == "%D"){
+    		}else if(mnemnonic[1].equals("%D")){
     			a = "0";
     			b = "0";
     			c = "011111";
     			
-    		}else if(mnemnonic[1] == "%S"){
+    		}else if(mnemnonic[1].equals("%S")){
     			a = "0";
     			b = "1";
     			c = "011111";
     			
-    		}else if(mnemnonic[1] == "(%A)"){
+    		}else if(mnemnonic[1].equals("(%A)")){
     			a = "1";
     			b = "0";
     			c = "110111";
     		}
     		
-    	}else if (mnemnonic[0] == "notw"){ //------------------------------------------------------
-    		if(mnemnonic[1] == "%A"){
+    	}else if (mnemnonic[0].equals("notw")){ //------------------------------------------------------
+    		if(mnemnonic[1].equals("%A")){
     			a = "0";
     			b = "0";
     			c = "110001";
     			
-    		}else if(mnemnonic[1] == "%D"){
+    		}else if(mnemnonic[1].equals("%D")){
     			a = "0";
     			b = "0";
     			c = "001101";
     			
-    		}else if(mnemnonic[1] == "%S"){
+    		}else if(mnemnonic[1].equals("%S")){
     			a = "0";
     			b = "1";
     			c = "001101";
     			
-    		}else if(mnemnonic[1] == "(%A)"){
+    		}else if(mnemnonic[1].equals("(%A)")){
     			a = "1";
     			b = "0";
     			c = "110001";
     		}
     		
-    	}else if (mnemnonic[0] == "negw"){ //------------------------------------------------------
-    		if(mnemnonic[1] == "%A"){
+    	}else if (mnemnonic[0].equals("negw")){ //------------------------------------------------------
+    		if(mnemnonic[1].equals("%A")){
     			a = "0";
     			b = "0";
     			c = "110011";
     			
-    		}else if(mnemnonic[1] == "%D"){
+    		}else if(mnemnonic[1].equals("%D")){
     			a = "0";
     			b = "0";
     			c = "001111";
     			
-    		}else if(mnemnonic[1] == "%S"){
+    		}else if(mnemnonic[1].equals("%S")){
     			a = "0";
     			b = "1";
     			c = "001111";
     			
-    		}else if(mnemnonic[1] == "(%A)"){
+    		}else if(mnemnonic[1].equals("(%A)")){
     			a = "1";
     			b = "0";
     			c = "110011";
     		}
     		
-    	}else if (mnemnonic[0] == "andw"){ //------------------------------------------------------
+    	}else if (mnemnonic[0].equals("andw")){ //------------------------------------------------------
     		c = "000000";
-    		if (mnemnonic[1] == "%A" && mnemnonic[2]=="%D"||
-    			mnemnonic[1] == "%D" && mnemnonic[2]=="%A"){
+    		if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")||
+    			mnemnonic[1].equals("%D") && mnemnonic[2].equals("%A")){
     			a = "0";
     			b = "0";
-    		}else if (mnemnonic[1] == "%A" && mnemnonic[2]=="%S"||
-    				  mnemnonic[1] == "%S" && mnemnonic[2]=="%A"){
+    		}else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%S")||
+    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("%A")){
     			a = "0";
     			b = "1";
-    		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%D"||
-    				  mnemnonic[1] == "%D" && mnemnonic[2]=="(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")||
+    				  mnemnonic[1].equals("%D") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "0";
-    		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%S"||
-    				  mnemnonic[1] == "%S" && mnemnonic[2]=="(%A)"){
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%S")||
+    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "1";
     		}
     		
-    	}else if (mnemnonic[0] == "orw"){ //------------------------------------------------------
+    	}else if (mnemnonic[0].equals("orw")){ //------------------------------------------------------
     		c = "010101";
-    		if (mnemnonic[1] == "%A" && mnemnonic[2]=="%D"||
-        			mnemnonic[1] == "%D" && mnemnonic[2]=="%A"){
+    		if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")||
+        			mnemnonic[1].equals("%D") && mnemnonic[2].equals("%A")){
         			a = "0";
         			b = "0";
-        		}else if (mnemnonic[1] == "%A" && mnemnonic[2]=="%S"||
-        				  mnemnonic[1] == "%S" && mnemnonic[2]=="%A"){
+        		}else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%S")||
+        				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("%A")){
         			a = "0";
         			b = "1";
-        		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%D"||
-        				  mnemnonic[1] == "%D" && mnemnonic[2]=="(%A)"){
+        		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")||
+        				  mnemnonic[1].equals("%D") && mnemnonic[2].equals("(%A)")){
         			a = "1";
         			b = "0";
-        		}else if (mnemnonic[1] == "(%A)" && mnemnonic[2]=="%S"||
-        				  mnemnonic[1] == "%S" && mnemnonic[2]=="(%A)"){
+        		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%S")||
+        				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("(%A)")){
         			a = "1";
         			b = "1";
         		}	
-    	}else if (mnemnonic[0] == "jmp" || mnemnonic[0] == "je" ||
-    			  mnemnonic[0] == "jne" || mnemnonic[0] == "jg" ||
-    			  mnemnonic[0] == "jge" || mnemnonic[0] == "jl" ||
-    			  mnemnonic[0] == "jle"){ //------------------------------------------------------
-    		if(mnemnonic[1] == "%A"){
+    	}else if (mnemnonic[0].equals("jmp") || mnemnonic[0].equals("je") ||
+    			  mnemnonic[0].equals("jne") || mnemnonic[0].equals("jg") ||
+    			  mnemnonic[0].equals("jge") || mnemnonic[0].equals("jl") ||
+    			  mnemnonic[0].equals("jle")){ //------------------------------------------------------
+    		if(mnemnonic[1].equals("%A")){
     			a = "0";
     			b = "0";
     			c = "110000";
     			
-    		}else if(mnemnonic[1] == "%D"){
+    		}else if(mnemnonic[1].equals("%D")){
     			a = "0";
     			b = "0";
     			c = "001100";
     			
-    		}else if(mnemnonic[1] == "%S"){
+    		}else if(mnemnonic[1].equals("%S")){
     			a = "0";
     			b = "1";
     			c = "001100";
     			
-    		}else if(mnemnonic[1] == "(%A)"){
+    		}else if(mnemnonic[1].equals("(%A)")){
     			a = "1";
     			b = "0";
     			c = "110000";
@@ -351,37 +349,37 @@ public class Code {
     	String j1 = "0";
     	String j0 = "0";
     	
-    	if (mnemnonic[0] == "jmp"){
+    	if (mnemnonic[0].equals("jmp")){
     		j2 = "1";
     		j1 = "1";
     		j0 = "1";
     	}
-    	else if (mnemnonic[0] == "je"){
+    	else if (mnemnonic[0].equals("je")){
     		j2 = "0";
     		j1 = "1";
     		j0 = "0";
     	}
-    	else if (mnemnonic[0] == "jne"){
+    	else if (mnemnonic[0].equals("jne")){
     		j2 = "1";
     		j1 = "0";
     		j0 = "1";
     	}
-    	else if (mnemnonic[0] == "jg"){
+    	else if (mnemnonic[0].equals("jg")){
     		j2 = "0";
     		j1 = "0";
     		j0 = "1";
     	}
-    	else if (mnemnonic[0] == "jge"){
+    	else if (mnemnonic[0].equals("jge")){
     		j2 = "0";
     		j1 = "1";
     		j0 = "1";
     	}
-    	else if (mnemnonic[0] == "jl"){
+    	else if (mnemnonic[0].equals("jl")){
     		j2 = "1";
     		j1 = "0";
     		j0 = "0";
     	}
-    	else if (mnemnonic[0] == "jle"){
+    	else if (mnemnonic[0].equals("jle")){
     		j2 = "1";
     		j1 = "1";
     		j0 = "0";

@@ -10,7 +10,6 @@
 package assembler;
 
 import java.io.*;
-import java.util.*;
 
 /**
  * Faz a geração do código gerenciando os demais módulos
@@ -44,15 +43,33 @@ public class Assemble {
      * Dependencia : Parser, SymbolTable
      */
     public void fillSymbolTable() throws FileNotFoundException, IOException {
-      Parser parse = new parser(inputFile);
-
+      Parser parse = new Parser(inputFile);
+      String comando = parse.command();
+      int linha = 0;
+      int ram = 16;
+      
+      // 1o Loop
       while (parse.advance()){
-        if (parse.commandType(parse.command()) == Parser.CommandType.L_COMMAND){ //Verificando se é um comando L
-          String add_to_table = parse.label(parse.command()); //Criando string para adicionar à tabela de símbolos
-          table.addEntry(add_to_table, parse.instruction_index);
+        if (parse.commandType(comando) == Parser.CommandType.L_COMMAND){ //Verificando se é um comando Label
+          String add_to_table = parse.label(comando); //Criando string para adicionar à tabela de símbolos
+          table.addEntry(add_to_table, linha);
         }
+        if (parse.commandType(comando) == Parser.CommandType.A_COMMAND || parse.commandType(comando) == Parser.CommandType.C_COMMAND){
+			linha++;
+			}
+      }
+      // 2o Loop -aqui pode ter erro
+      while (parse.advance()){
+          if (parse.commandType(comando) == Parser.CommandType.A_COMMAND){ 
+        	  String symbol = parse.symbol(comando);
+        	  if (!table.contains(symbol)){
+					table.addEntry(symbol, ram);
+					ram ++;
+				}
+          }
       }
     }
+      
     /**
      * Segundo passo para a geração do código de máquina
      * Varre o código em busca de instruções do tipo A, C
@@ -61,34 +78,37 @@ public class Assemble {
      * Dependencias : Parser, Code
      */
     public void generateMachineCode() throws FileNotFoundException, IOException{
-        Parser parse = new Parser(inputFile);  // abre o arquivo e aponta para o começo
+        Parser parse = new Parser(inputFile);
+        String instrucao = "0";
+        String instrucao_maquina = "";
+        String binario = "";
 
         while (parse.advance()){
-          String instrucao = "0";
-          String instrucao_maquina = "";
-          String binario = "";
-          if (parse.commandType(parse.command()) == Parser.CommandType.A_COMMAND){
-              if (table.contains(parser.symbol(parser.command()))){
-                  binario = Code.toBinary(String.valueOf(table.getAddress(parse.symbol(parse.command()))));
+        	String comando = parse.command();
+        	String symbol = parse.symbol(comando);
+        	String bin = Code.toBinary(symbol);
+        	String[] mne = parse.instruction(comando);
+        	
+        	
+        	if (parse.commandType(comando) == Parser.CommandType.A_COMMAND){
+              if (table.contains(symbol)){
+                  binario = Code.toBinary(String.valueOf(table.getAddress(symbol)));
                   instrucao_maquina = instrucao + binario;
-                  outHACK.write(instrucao_maquina);
-              }
+                  }
               else{
-                int i = 0;
-                while (!table.containsValue(i)){
-                  i++;
-                }
+            	  instrucao_maquina = instrucao + bin;
+            	  }
+              outHACK.write(instrucao_maquina);
               }
-              else{
+        	else if(parse.commandType(comando) == Parser.CommandType.C_COMMAND){
                 instrucao = "1";
-                binario = Code.comp(parse.instruction(parse.command()))+Code.dest(parse.instruction(parse.command()))+Code.jump(parse.instruction(parse.command()));
+                binario = Code.comp(mne) + Code.dest(mne)+Code.jump(mne);
                 instrucao_maquina = instrucao + binario;
                 outHACK.write(instrucao_maquina);
               }
           }
-        }
-    }
-
+    } 
+    
     /**
      * Fecha arquivo de escrita
      */
