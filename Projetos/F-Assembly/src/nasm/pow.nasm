@@ -8,13 +8,14 @@
 
 
 leaw $R1, %A
-movw (%A), %D  
-movw (%A), %S  
+movw (%A), %D   
+movw (%A), %S 
+decw %D
 leaw $R1, %A
-decw %D        
-addw (%A), %S, %S 
+decw %D
+addw (%A), %S, %S
 leaw $R4, %A
 jg
 nop
 leaw $R0,%A
-movw %S, (%A) 
+movw %S, (%A)

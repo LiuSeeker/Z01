@@ -1,8 +1,8 @@
-
-
 leaw $0, %A
 ;Mover o que ta em A[0] para D
 movw (%A), %D
+leaw $1, %A
+ 
 WHILE:
 leaw $1, %A
 ;Subtrai D - A[1] e salva em D
@@ -16,7 +16,6 @@ nop
 leaw $2, %A
 ;Move A[2] -> S
 movw %S, (%A)
-
 
 
 
