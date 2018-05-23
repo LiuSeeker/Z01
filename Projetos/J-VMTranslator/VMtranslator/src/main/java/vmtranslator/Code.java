@@ -45,31 +45,141 @@ public class Code {
 
         if(command.equals("add")) {
             commands.add(String.format("; %d - ADD", lineCode++));
-
+            commands.add("leaw $SP, %A");
+            commands.add("decw %A");
+            commands.add("movw %A, %S");
+            commands.add("movw (%A), %D");
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, (%S)");
+            commands.add("decw %S");
+            commands.add("addw (%S), %D, (%S)");
+            
         } else if (command.equals("sub")) {
             commands.add(String.format("; %d - SUB", lineCode++));
-
+            commands.add("leaw $SP, %A");
+            commands.add("decw %A");
+            commands.add("movw %A, %S");
+            commands.add("movw (%A), %D");
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, (%S)");
+            commands.add("decw %S");
+            commands.add("subw (%S), %D, (%S)");
+            
         } else if (command.equals("neg")) {
             commands.add(String.format("; %d - NEG", lineCode++));
+            commands.add("leaw $SP, %A");
+            commands.add("decw %A");
+            commands.add("movw (%A), %S");
+            commands.add("negw %S");
+            commands.add("movw %S, (%A)");
 
         } else if (command.equals("eq")) {
             commands.add(String.format("; %d - EQ", lineCode++));
-
+            commands.add("leaw $SP, %A");
+            commands.add("decw %A");
+            commands.add("movw %A, %S");
+            commands.add("movw (%A), %D");
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, (%S)");
+            commands.add("decw %S");
+            commands.add("subw (%S), %D, %D");
+            commands.add("leaw $ZERO, %A");
+            commands.add("je %D");
+            commands.add("nop");
+            
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, (%S)");
+            commands.add("leaw $END, %A");
+            commands.add("jmp");
+            commands.add("nop");
+            
+            commands.add("ZERO:");
+            commands.add("notw %D");
+            commands.add("movw %D, (%S)");
+            
+            commands.add("END:");
+            
         } else if (command.equals("gt")) {
             commands.add(String.format("; %d - GT", lineCode++));
+            commands.add(String.format("; %d - EQ", lineCode++));
+            commands.add("leaw $SP, %A");
+            commands.add("decw %A");
+            commands.add("movw %A, %S");
+            commands.add("movw (%A), %D");
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, (%S)");
+            commands.add("decw %S");
+            commands.add("subw (%S), %D, %D");
+            commands.add("leaw $TRUE, %A");
+            commands.add("jg %D");
+            commands.add("nop");
+            
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, (%S)");
+            commands.add("leaw $END, %A");
+            commands.add("jmp");
+            commands.add("nop");
+            
+            commands.add("TRUE:");
+            commands.add("notw %D");
+            commands.add("movw %D, (%S)");
+            
+            commands.add("END:");
 
         } else if (command.equals("lt")) {
             commands.add(String.format("; %d - LT", lineCode++));
+            commands.add(String.format("; %d - GT", lineCode++));
+            commands.add(String.format("; %d - EQ", lineCode++));
+            commands.add("leaw $SP, %A");
+            commands.add("decw %A");
+            commands.add("movw %A, %S");
+            commands.add("movw (%A), %D");
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, (%S)");
+            commands.add("decw %S");
+            commands.add("subw (%S), %D, %D");
+            commands.add("leaw $TRUE, %A");
+            commands.add("jl %D");
+            commands.add("nop");
+            
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, (%S)");
+            commands.add("leaw $END, %A");
+            commands.add("jmp");
+            commands.add("nop");
+            
+            commands.add("TRUE:");
+            commands.add("notw %D");
+            commands.add("movw %D, (%S)");
+            
+            commands.add("END:");
 
         } else if (command.equals("and")) {
             commands.add(String.format("; %d - AND", lineCode++));
+            commands.add("leaw $SP, %A");
+            commands.add("decw %A");
+            commands.add("movw (%A), %S");
+            commands.add("decw %A");
+            commands.add("andw (%A), %S, (%A)");
 
         } else if (command.equals("or")) {
             commands.add(String.format("; %d - OR", lineCode++));
+            commands.add("leaw $SP, %A");
+            commands.add("decw %A");
+            commands.add("movw (%A), %S");
+            commands.add("decw %A");
+            commands.add("orw (%A), %S, (%A)");
 
         } else if (command.equals("not")) {
-            commands.add(String.format("; %d - NOT", lineCode++));
+        	commands.add(String.format("; %d - NEG", lineCode++));
+            commands.add("leaw $SP, %A");
+            commands.add("decw %A");
+            commands.add("movw (%A), %S");
+            commands.add("notw %S");
+            commands.add("movw %S, (%A)");
 
+        } else {
+        	Error.error("Instrução invalida");
         }
 
         String[] stringArray = new String[ commands.size() ];
