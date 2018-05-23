@@ -46,30 +46,30 @@ public class Parser {
 	 * @return Verdadeiro se ainda hÃƒÂ¡ instruÃƒÂ§ÃƒÂµes, Falso se as instruÃƒÂ§ÃƒÂµes terminaram.
 	 */
 	public Boolean advance() {
-        while(scan.hasNextLine()){
-            String line = scan.nextLine();
+		while(scan.hasNextLine()){
+			String line = scan.nextLine();
 
-            line = line.trim();
+			line = line.trim();
 
-            if (!line.isEmpty() && line.charAt(0) != ';'  ) {
-                line.replace("\t", "");
-                line = line.replaceAll(" +", " ");
-                int ind = line.length();
-                for (int i = 0; i <line.length() ; i++) {
-                    if (line.charAt(i) == ';'){
-                        ind = i-1;
+			if (!line.isEmpty() && line.charAt(0) != ';'  ) {
+				line.replace("\t", "");
+				line = line.replaceAll(" +", " ");
+				int ind = line.length();
+				for (int i = 0; i <line.length() ; i++) {
+					if (line.charAt(i) == ';'){
+						ind = i-1;
 
-                    }
+					}
 
-                }
-//                System.out.println(line);
-                this.line = line.substring(0,(ind));
-                return true;
-            }
+				}
+				//                System.out.println(line);
+				this.line = line.substring(0,(ind));
+				return true;
+			}
 
-            }
-        return false;
-        }
+		}
+		return false;
+	}
 
 	/**
 	 * Retorna o comando "intruÃƒÂ§ÃƒÂ£o" atual (sem o avanÃƒÂ§o)
@@ -112,26 +112,25 @@ public class Parser {
 	 * @return somente o sÃƒÂ­mbolo ou o valor nÃƒÂºmero da instruÃƒÂ§ÃƒÂ£o.
 	 */
 	public String symbol(String command) {
-        String simb = "";
-        Integer inde = 0;
-        if(commandType(command) == CommandType.A_COMMAND){
+		String simb = "";
+		Integer inde = 0;
 
-            for (int i = 0; i <command.length() ; i++) {
-                if(command.charAt(i)=='$'){
-                    inde = i+1;
-                }
-            }
-            String newcom= command.substring(inde,command.length());
-            for (int i = 0; i <newcom.length() ; i++) {
+		for (int i = 0; i <command.length() ; i++) {
+			if(command.charAt(i)=='$'){
+				inde = i+1;
+			}
+		}
+		String newcom= command.substring(inde,command.length());
+		for (int i = 0; i <newcom.length() ; i++) {
 
-                if(newcom.charAt(i)==' ' || newcom.charAt(i) == ','){
-                    break;
-                }
-                simb+=newcom.charAt(i);
+			if(newcom.charAt(i)==' ' || newcom.charAt(i) == ','){
+				break;
+			}
+			simb+=newcom.charAt(i);
 
-            }
-        }
-        return simb;
+		}
+
+		return simb;
 	}
 
 	/**
