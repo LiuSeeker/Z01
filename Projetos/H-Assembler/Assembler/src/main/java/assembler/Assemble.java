@@ -50,6 +50,7 @@ public class Assemble {
       
       // 1o Loop
       while (parse.advance()){
+    	  comando = parse.command();
         if (parse.commandType(comando) == Parser.CommandType.L_COMMAND){ //Verificando se é um comando Label
           String add_to_table = parse.label(comando); //Criando string para adicionar à tabela de símbolos
           table.addEntry(add_to_table, linha);
@@ -60,6 +61,7 @@ public class Assemble {
       }
       // 2o Loop -aqui pode ter erro
       while (parse.advance()){
+    	  comando = parse.command();
           if (parse.commandType(comando) == Parser.CommandType.A_COMMAND){ 
         	  String symbol = parse.symbol(comando);
         	  if (!table.contains(symbol)){
@@ -86,25 +88,28 @@ public class Assemble {
         while (parse.advance()){
         	String comando = parse.command();
         	String symbol = parse.symbol(comando);
-        	String bin = Code.toBinary(symbol);
         	String[] mne = parse.instruction(comando);
         	
         	
         	if (parse.commandType(comando).equals(Parser.CommandType.A_COMMAND)){
+        		instrucao = "0";
               if (table.contains(symbol)){
                   binario = Code.toBinary(String.valueOf(table.getAddress(symbol)));
                   instrucao_maquina = instrucao + binario;
                   }
               else{
+            	  String bin = Code.toBinary(symbol);
             	  instrucao_maquina = instrucao + bin;
             	  }
               outHACK.write(instrucao_maquina);
+              outHACK.write('\n');
               }
         	else if(parse.commandType(comando) == Parser.CommandType.C_COMMAND){
                 instrucao = "1";
                 binario = Code.comp(mne) + Code.dest(mne)+Code.jump(mne);
                 instrucao_maquina = instrucao + binario;
                 outHACK.write(instrucao_maquina);
+                outHACK.write('\n');
               }
           }
     } 

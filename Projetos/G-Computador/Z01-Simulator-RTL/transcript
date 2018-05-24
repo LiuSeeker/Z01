@@ -1,31 +1,22 @@
-# do {C:\Users\jorge\Desktop\Insper\Z01-Coldzera\Projetos\G-Computador\Z01-Simulator-RTL\do\sim.do}
+# do {C:\Users\vitor\Dropbox\Insper\2018.1\Elementos-de-Sistemas\Z01-Coldzera\Projetos\G-Computador\Z01-Simulator-RTL\do\sim.do}
 # 1
 # 1
 # 1
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:41:35 on May 18,2018
+# Start time: 17:48:15 on May 23,2018
 # vcom -reportprogress 300 -work work ../../C-LogicaCombinacional/src/rtl/And16.vhd ../../C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd ../../C-LogicaCombinacional/src/rtl/BarrelShifter8.vhd ../../C-LogicaCombinacional/src/rtl/DMux2Way.vhd ../../C-LogicaCombinacional/src/rtl/DMux4Way.vhd ../../C-LogicaCombinacional/src/rtl/DMux8Way.vhd ../../C-LogicaCombinacional/src/rtl/Mux16.vhd ../../C-LogicaCombinacional/src/rtl/Mux2Way.vhd ../../C-LogicaCombinacional/src/rtl/Mux2Way16.vhd ../../C-LogicaCombinacional/src/rtl/Mux4Way.vhd ../../C-LogicaCombinacional/src/rtl/Mux4Way16.vhd ../../C-LogicaCombinacional/src/rtl/Mux8Way.vhd ../../C-LogicaCombinacional/src/rtl/Mux8Way16.vhd ../../C-LogicaCombinacional/src/rtl/Nand.vhd ../../C-LogicaCombinacional/src/rtl/Nor8Way.vhd ../../C-LogicaCombinacional/src/rtl/Not16.vhd ../../C-LogicaCombinacional/src/rtl/Or16.vhd ../../C-LogicaCombinacional/src/rtl/Or8Way.vhd 
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/jorge/Desktop/Insper/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
-# Break key hit
-# process #10880 could not be killed
-# 
-# Break key hit
-# Break key hit
-# Break key hit
-# Break key hit
-# Break key hit
-# Break key hit
-# Break key hit
-# Break key hit
+# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
+# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
+# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
+# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
+# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
+# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
+# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
+# ** Warning: (vcom-6) -- Waiting for lock by "unknown". Lockfile is "C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/work/_lock".
+# SIGINT: interrupt
+# ** Error: C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro C:/Users/vitor/Dropbox/Insper/2018.1/Elementos-de-Sistemas/Z01-Coldzera/Projetos/G-Computador/Z01-Simulator-RTL/do/load.do line 3
+# C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -reportprogress 300 -work work ../../C-LogicaCombinacional/src/rtl/*.vhd"

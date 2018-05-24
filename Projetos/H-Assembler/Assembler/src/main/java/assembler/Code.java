@@ -122,28 +122,46 @@ public class Code {
     		}
     		
     	}else if (mnemnonic[0].equals("subw")){ //------------------------------------------------------
-    		c = "010011";
     		String i0 = "$0";
     		String i1 = "$1";
     		String i2 = "$-1";
-    		if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")||
-    			mnemnonic[1].equals("%D") && mnemnonic[2].equals("%A")){
+    		if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")){
     			a = "0";
     			b = "0";
-    		}else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%S")||
-    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("%A")){
+    			c = "000111";
+    		}else if (mnemnonic[1].equals("%D") && mnemnonic[2].equals("%A")){
+        		a = "0";
+        		b = "0";
+        		c = "010011";
+        		}
+    		else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%S")){
     			a = "0";
     			b = "1";
-    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")||
-    				  mnemnonic[1].equals("%D") && mnemnonic[2].equals("(%A)")){
-    			a = "1";
-    			b = "0";
-    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%S")||
-    				  mnemnonic[1].equals("%S") && mnemnonic[2].equals("(%A)")){
+    			c = "000111";
+    		}else if (mnemnonic[1].equals("%S") && mnemnonic[2].equals("%A")){
+        		a = "1";
+        		b = "0";
+        		c = "010011";
+        		}
+    		else if (mnemnonic[1].equals("%S") && mnemnonic[2].equals("(%A)")){
     			a = "1";
     			b = "1";
-    			
-    		}else if ((mnemnonic[2].equals(i0)||mnemnonic[2].equals(i1)||mnemnonic[2].equals(i2)) && mnemnonic [1].equals("(%A)")){
+    			c = "010011";
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%S")){
+        		a = "1";
+        		b = "1";
+        		c = "000111";
+        		}
+    		else if (mnemnonic[1].equals("%D") && mnemnonic[2].equals("(%A)")){
+    			a = "1";
+    			b = "0";
+    			c = "010011";
+    		}else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")){
+        		a = "1";
+        		b = "0";
+        		c = "000111";
+        		}
+    		else if ((mnemnonic[2].equals(i0)||mnemnonic[2].equals(i1)||mnemnonic[2].equals(i2)) && mnemnonic [1].equals("(%A)")){
     			a = "1";
     			b = "0";
     			c = "110010";
@@ -313,7 +331,13 @@ public class Code {
     			  mnemnonic[0].equals("jne") || mnemnonic[0].equals("jg") ||
     			  mnemnonic[0].equals("jge") || mnemnonic[0].equals("jl") ||
     			  mnemnonic[0].equals("jle")){ //------------------------------------------------------
-    		if(mnemnonic[1].equals("%A")){
+    		if(mnemnonic.length == 1) {
+    			// usa padrao %D
+    			a = "0";
+    			b = "0";
+    			c = "001100";
+    		}
+    		else if(mnemnonic[1].equals("%A")){
     			a = "0";
     			b = "0";
     			c = "110000";

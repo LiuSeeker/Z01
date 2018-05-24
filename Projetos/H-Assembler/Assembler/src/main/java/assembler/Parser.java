@@ -157,7 +157,7 @@ public class Parser {
 	// movw %A %D -> ["movw", "%A", "%D"]
 	public String[] instruction(String command) {
 		String[] instruction = new String[3];
-		command = command.replace(","," ");
+		command = command.replace(","," ").replace("  ", " ");
 		instruction = command.split(" ");
 		return instruction;
 	}
