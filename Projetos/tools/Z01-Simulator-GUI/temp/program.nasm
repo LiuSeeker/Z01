@@ -15,8 +15,8 @@ leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-; 2 - PUSH constant 23
-leaw $23,%A
+; 2 - PUSH constant 133
+leaw $133,%A
 movw %A,%D
 leaw $SP,%A
 movw (%A),%A

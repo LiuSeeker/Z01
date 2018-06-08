@@ -39,7 +39,7 @@ add wave -position end sim:/computador_tb/c1/MAIN_CPU/*
 # Executa simulação
 ################################
 
-run 200 ns
+run 4000 ns
 
 ################################
 # Exporta resultado (list)
