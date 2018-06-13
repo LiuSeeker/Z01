@@ -208,12 +208,56 @@ public class Code {
             if (segment.equals("constant")) {
                 Error.error("Não faz sentido POP com constant");
             } else if (segment.equals("local")) {
-
+            	
+            	commands.add("leaw $SP, %A");
+            	commands.add("movw (%A), %A");
+            	commands.add("decw %A");
+            	commands.add("movw (%A), %S");
+            	commands.add("leaw $LCL %A");
+            	commands.add("movw (%A), %A");
+            	commands.add("movw (%A), %D");
+            	commands.add("leaw $" + index + ", %A");
+            	commands.add("addw (%A), %D, %D");
+            	commands.add("movw %S, %D");
+            	
             } else if (segment.equals("argument")) {
-
+            	
+            	commands.add("leaw $SP, %A");
+            	commands.add("movw (%A), %A");
+            	commands.add("decw %A");
+            	commands.add("movw (%A), %S");
+            	commands.add("leaw $ARG, %A");
+            	commands.add("movw (%A), %A");
+            	commands.add("movw (%A), %D");
+            	commands.add("leaw $" + index + ", %A");
+            	commands.add("addw (%A), %D, %D");
+            	commands.add("movw %S, %D");
+            	
             } else if (segment.equals("this")) {
+            	
+            	commands.add("leaw $SP, %A");
+            	commands.add("movw (%A), %A");
+            	commands.add("decw %A");
+            	commands.add("movw (%A), %S");
+            	commands.add("leaw $THIS %A");
+            	commands.add("movw (%A), %A");
+            	commands.add("movw (%A), %D");
+            	commands.add("leaw $" + index + ", %A");
+            	commands.add("addw (%A), %D, %D");
+            	commands.add("movw %S, %D");
 
             } else if (segment.equals("that")) {
+            	
+            	commands.add("leaw $SP, %A");
+            	commands.add("movw (%A), %A");
+            	commands.add("decw %A");
+            	commands.add("movw (%A), %S");
+            	commands.add("leaw $THAT %A");
+            	commands.add("movw (%A), %A");
+            	commands.add("movw (%A), %D");
+            	commands.add("leaw $" + index + ", %A");
+            	commands.add("addw (%A), %D, %D");
+            	commands.add("movw %S, %D");
 
             } else if (segment.equals("static")) {
 
