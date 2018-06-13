@@ -102,12 +102,12 @@ GND                          : AA3       : gnd    :                   :         
 GND                          : AA4       : gnd    :                   :         :           :                
 AS_DATA2, DATA2              : AA5       :        :                   :         : 3A        :                
 GND                          : AA6       : gnd    :                   :         :           :                
-LCD_RD_N                     : AA7       : output : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   :         : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA9       :        :                   :         : 3B        :                
-LCD_D[1]                     : AA10      : bidir  : 2.5 V             :         : 3B        : N              
+LCD_D[0]                     : AA9       : bidir  : 2.5 V             :         : 3B        : N              
+LCD_CS_N                     : AA10      : output : 2.5 V             :         : 3B        : N              
 GND                          : AA11      : gnd    :                   :         :           :                
-LCD_D[7]                     : AA12      : bidir  : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA12      :        :                   :         : 3B        :                
 SW[7]                        : AA13      : input  : 3.3-V LVTTL       :         : 4A        : Y              
 SW[6]                        : AA14      : input  : 3.3-V LVTTL       :         : 4A        : Y              
 SW[4]                        : AA15      : input  : 3.3-V LVTTL       :         : 4A        : Y              
@@ -124,11 +124,11 @@ AS_DATA1, DATA1              : AB3       :        :                   :         
 AS_DATA0, ASDO, DATA0        : AB4       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 3B        :                
-LCD_D[10]                    : AB7       : bidir  : 2.5 V             :         : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB8       :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB7       :        :                   :         : 3B        :                
+LCD_D[11]                    : AB8       : bidir  : 2.5 V             :         : 3B        : N              
 GND                          : AB9       : gnd    :                   :         :           :                
-LCD_D[5]                     : AB10      : bidir  : 2.5 V             :         : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB11      :        :                   :         : 3B        :                
+LCD_D[10]                    : AB10      : bidir  : 2.5 V             :         : 3B        : N              
+LCD_D[8]                     : AB11      : bidir  : 2.5 V             :         : 3B        : N              
 SW[9]                        : AB12      : input  : 3.3-V LVTTL       :         : 4A        : Y              
 SW[8]                        : AB13      : input  : 3.3-V LVTTL       :         : 4A        : Y              
 GND                          : AB14      : gnd    :                   :         :           :                
@@ -367,7 +367,7 @@ GND                          : M4        : gnd    :                   :         
 altera_reserved_tdo          : M5        : output : 2.5 V             :         : 3A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : M6        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 3A        :                
-LCD_D[13]                    : M8        : bidir  : 2.5 V             :         : 3B        : N              
+LCD_D[12]                    : M8        : bidir  : 2.5 V             :         : 3B        : N              
 CLOCK_50                     : M9        : input  : 3.3-V LVTTL       :         : 3B        : Y              
 GND                          : M10       : gnd    :                   :         :           :                
 VCC                          : M11       : power  :                   : 1.1V    :           :                
@@ -389,8 +389,8 @@ VCC                          : N4        : power  :                   : 1.1V    
 GND                          : N5        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N6        :        :                   :         : 3A        :                
 GND                          : N7        : gnd    :                   :         :           :                
-LCD_D[9]                     : N8        : bidir  : 2.5 V             :         : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : N9        :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 3B        :                
+LCD_D[5]                     : N9        : bidir  : 2.5 V             :         : 3B        : N              
 VCC                          : N10       : power  :                   : 1.1V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
 VCC                          : N12       : power  :                   : 1.1V    :           :                
@@ -411,17 +411,17 @@ GND                          : P4        : gnd    :                   :         
 altera_reserved_tms          : P5        : input  : 2.5 V             :         : 3A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P6        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P7        :        :                   :         : 3A        :                
-LCD_D[8]                     : P8        : bidir  : 2.5 V             :         : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : P9        :        :                   :         : 3B        :                
+LCD_D[4]                     : P8        : bidir  : 2.5 V             :         : 3B        : N              
+LCD_D[2]                     : P9        : bidir  : 2.5 V             :         : 3B        : N              
 GND                          : P10       : gnd    :                   :         :           :                
 VCC                          : P11       : power  :                   : 1.1V    :           :                
-LCD_D[2]                     : P12       : bidir  : 2.5 V             :         : 3B        : N              
+LCD_D[6]                     : P12       : bidir  : 2.5 V             :         : 3B        : N              
 VCC                          : P13       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 4A        :                
 VCC                          : P15       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P17       :        :                   :         : 5A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P18       :        :                   :         : 5A        :                
+LCD_RD_N                     : P18       : output : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P19       :        :                   :         : 5A        :                
 VCCIO5A                      : P20       : power  :                   : 2.5V    : 5A        :                
 VCCPD5A                      : P21       : power  :                   : 2.5V    : 5A        :                
@@ -434,10 +434,10 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : R5        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : R6        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R7        :        :                   :         : 3A        :                
 VCCIO3B                      : R8        : power  :                   : 2.5V    : 3B        :                
-LCD_RESET_N                  : R9        : output : 2.5 V             :         : 3B        : N              
-LCD_ON                       : R10       : output : 2.5 V             :         : 3B        : N              
-LCD_CS_N                     : R11       : output : 2.5 V             :         : 3B        : N              
-LCD_D[14]                    : R12       : bidir  : 2.5 V             :         : 3B        : N              
+LCD_WR_N                     : R9        : output : 2.5 V             :         : 3B        : N              
+LCD_D[3]                     : R10       : bidir  : 2.5 V             :         : 3B        : N              
+LCD_D[9]                     : R11       : bidir  : 2.5 V             :         : 3B        : N              
+LCD_D[1]                     : R12       : bidir  : 2.5 V             :         : 3B        : N              
 GND                          : R13       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R15       :        :                   :         : 5A        :                
@@ -456,7 +456,7 @@ VCCA_FPLL                    : T5        : power  :                   : 2.5V    
 VCCIO3A                      : T6        : power  :                   : 2.5V    : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3B        :                
+LCD_RESET_N                  : T9        : output : 2.5 V             :         : 3B        : N              
 LCD_D[15]                    : T10       : bidir  : 2.5 V             :         : 3B        : N              
 VCCIO3B                      : T11       : power  :                   : 2.5V    : 3B        :                
 SW[3]                        : T12       : input  : 3.3-V LVTTL       :         : 4A        : Y              
@@ -465,7 +465,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T14       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 5A        :                
 GND                          : T16       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T17       :        :                   :         : 5A        :                
-LCD_D[12]                    : T18       : bidir  : 2.5 V             :         : 5A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :         : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T19       :        :                   :         : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T20       :        :                   :         : 5A        :                
 GND                          : T21       : gnd    :                   :         :           :                
@@ -480,8 +480,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : U8        :        :                   :         : 3A        :                
 GND                          : U9        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U10       :        :                   :         : 3B        :                
-LCD_D[6]                     : U11       : bidir  : 2.5 V             :         : 3B        : N              
-LCD_D[4]                     : U12       : bidir  : 2.5 V             :         : 3B        : N              
+LCD_RS                       : U11       : output : 2.5 V             :         : 3B        : N              
+LCD_D[13]                    : U12       : bidir  : 2.5 V             :         : 3B        : N              
 SW[0]                        : U13       : input  : 3.3-V LVTTL       :         : 4A        : Y              
 VCCIO4A                      : U14       : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 4A        :                
@@ -500,8 +500,8 @@ altera_reserved_tck          : V5        : input  : 2.5 V             :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 3A        :                
 GND                          : V7        : gnd    :                   :         :           :                
 VCCPGM                       : V8        : power  :                   : 3.0V/3.3V :           :                
-LCD_D[0]                     : V9        : bidir  : 2.5 V             :         : 3B        : N              
-LCD_RS                       : V10       : output : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V10       :        :                   :         : 3B        :                
 NC                           : V11       :        :                   :         :           :                
 GND                          : V12       : gnd    :                   :         :           :                
 SW[1]                        : V13       : input  : 3.3-V LVTTL       :         : 4A        : Y              
@@ -544,9 +544,9 @@ GND                          : Y5        : gnd    :                   :         
 NC                           : Y6        :        :                   :         :           :                
 VREFB3AN0                    : Y7        : power  :                   :         : 3A        :                
 VCCIO3A                      : Y8        : power  :                   : 2.5V    : 3A        :                
-LCD_D[11]                    : Y9        : bidir  : 2.5 V             :         : 3B        : N              
-LCD_D[3]                     : Y10       : bidir  : 2.5 V             :         : 3B        : N              
-LCD_WR_N                     : Y11       : output : 2.5 V             :         : 3B        : N              
+LCD_D[14]                    : Y9        : bidir  : 2.5 V             :         : 3B        : N              
+LCD_D[7]                     : Y10       : bidir  : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y11       :        :                   :         : 3B        :                
 VREFB3BN0                    : Y12       : power  :                   :         : 3B        :                
 VCCIO3B                      : Y13       : power  :                   : 2.5V    : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y14       :        :                   :         : 4A        :                
@@ -554,7 +554,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : Y15       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y16       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y17       :        :                   :         : 4A        :                
 GND                          : Y18       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y19       :        :                   :         : 4A        :                
+LCD_ON                       : Y19       : output : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y20       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y21       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y22       :        :                   :         : 4A        :                

@@ -106,7 +106,7 @@ architecture arch of CPU is
 begin
   muxALUI: Mux16 port map (s_ALUout,instruction,s_muxALUI_A,s_muxALUI_Aout);
   muxAM: Mux16 port map (s_regAout, inM, s_muxAM_ALU, s_muxAM_ALUout);
-  muxSD: Mux16 port map (s_regSout, s_regDout, s_muxSD_ALU, s_muxSDout);
+  muxSD: Mux16 port map (s_regDout, s_regSout, s_muxSD_ALU, s_muxSDout);
   A_register: Register16 port map (clock, s_muxALUI_Aout, s_loadA, s_regAout);
   S_register: Register16 port map (clock, s_ALUout, s_loadS, s_regSout);
   D_register: Register16 port map (clock, s_ALUout, s_loadD, s_regDout);

@@ -92,21 +92,24 @@ ARCHITECTURE logic OF MemoryIO IS
 
 SIGNAL dataout, reg_out, sw16: STD_LOGIC_VECTOR (15 DOWNTO 0);
 SIGNAL address14: std_logic_vector (13 downto 0);
-SIGNAL loadRAM, loadLCD, loadLED, sel_mux: STD_LOGIC;
+SIGNAL loadRAM, loadRAM2, loadLCD, loadLED, loadLCD2, loadLED2, sel_mux: STD_LOGIC;
 
 BEGIN
   address14 <= ADDRESS(13 downto 0); -- address para ser usado no SCREEN
 
-  loadRAM <= '1' when (ADDRESS <= std_logic_vector(to_unsigned(16383,15))) else  -- "0011111111111111"
+  loadRAM2 <= '1' when (ADDRESS <= std_logic_vector(to_unsigned(16383,15))) else  -- "0011111111111111"
              '0';
-  loadLCD <= '1' when (ADDRESS >= std_logic_vector(to_unsigned(16384,15)) and ADDRESS <= std_logic_vector(to_unsigned(21183,15))) else
+  loadLCD2 <= '1' when (ADDRESS >= std_logic_vector(to_unsigned(16384,15)) and ADDRESS <= std_logic_vector(to_unsigned(21183,15))) else
              '0';
-  loadLED <= '1' when (ADDRESS = std_logic_vector(to_unsigned(21184,15))) else
+  loadLED2 <= '1' when (ADDRESS = std_logic_vector(to_unsigned(21184,15))) else
              '0';
   sel_mux <= '1' when (ADDRESS = std_logic_vector(to_unsigned(21185,15))) else
              '0';
 
   sw16 <= "000000" & sw;
+  loadRAM <= loadRAM2 and LOAD;
+  loadLCD <= loadLCD2 and LOAD;
+  loadLED <= loadLED2 and LOAD;
 
   RAM: RAM16K port map(address14, CLK_FAST, INPUT, loadRAM, dataout);
   REG: Register16 port map(CLK_SLOW, INPUT, loadLED, reg_out);
