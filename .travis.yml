@@ -49,5 +49,7 @@ script:
   #- python Projetos/F-Assembly/scripts/testeAssembly.py	
   # - python Projetos/G-Computador/script/testeControlUnit.py
   # - python Projetos/G-Computador/script/testeAssemblyMyCPU.py
-  - python Projetos/H-Assembler/scripts/compileNasmMyAssembler.py
-  - python Projetos/H-Assembler/scripts/testeAssemblyMyAssembler.py
+  # - python Projetos/H-Assembler/scripts/compileNasmMyAssembler.py
+  # - python Projetos/H-Assembler/scripts/testeAssemblyMyAssembler.py
+  - python Projetos/J-VMTranslator/scripts/testeVmMyTranslator
+  - python Projetos/J-VMTranslator/scripts/translateVmMyTranslator
