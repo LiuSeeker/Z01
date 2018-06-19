@@ -31,8 +31,7 @@ public class Parser {
 		C_IF,              // comando if-goto
 		C_FUNCTION,        // declaracao de funcao
 		C_RETURN,          // retorno de funcao
-		C_CALL,          // chamada de funcao
-		C_COMMENT
+		C_CALL             // chamada de funcao
 	}
 
 	/**
@@ -50,11 +49,24 @@ public class Parser {
 	 * @return Verdadeiro se ainda há instruções, Falso se as instruções terminaram.
 	 */
 	public Boolean advance() throws IOException {
-		if((currentCommand = fileReader.readLine()) != null) {
-			this.currentCommand = fileReader.readLine();
-			return true;
-		}
-		else {return false;}
+		String a;
+		while(true){
+            a = fileReader.readLine();
+            if (a == null){
+                return false;
+            }
+            if (!a.equals("")){
+            	a = a.trim();
+            	if (a.charAt(0) == '/' && a.charAt(1) == '/') {
+            	a = "";
+            	}
+            }
+            if (a.equals("")){
+                continue;
+            }
+            currentCommand = a;
+            return true;
+        }
 	}
 
 	/**
@@ -62,7 +74,7 @@ public class Parser {
 	 * @return a instrução atual para ser analilisada
 	 */
 	public String command() {
-		return this.currentCommand;
+		return currentCommand;
 	}
 
 	/**
@@ -101,9 +113,6 @@ public class Parser {
 		}
 		else if (command.startsWith("call")) {
 			return CommandType.C_CALL;
-		}
-		else if (command.startsWith("//")) {
-			return CommandType.C_COMMENT;
 		}
 		else {return null;}
 	}
