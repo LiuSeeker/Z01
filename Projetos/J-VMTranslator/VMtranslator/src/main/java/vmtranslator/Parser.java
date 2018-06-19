@@ -31,7 +31,8 @@ public class Parser {
 		C_IF,              // comando if-goto
 		C_FUNCTION,        // declaracao de funcao
 		C_RETURN,          // retorno de funcao
-		C_CALL             // chamada de funcao
+		C_CALL,          // chamada de funcao
+		C_COMMENT
 	}
 
 	/**
@@ -49,7 +50,8 @@ public class Parser {
 	 * @return Verdadeiro se ainda há instruções, Falso se as instruções terminaram.
 	 */
 	public Boolean advance() throws IOException {
-		if((currentCommand = fileReader.readLine() ) != null) {
+		if((currentCommand = fileReader.readLine()) != null) {
+			this.currentCommand = fileReader.readLine();
 			return true;
 		}
 		else {return false;}
@@ -100,6 +102,9 @@ public class Parser {
 		else if (command.startsWith("call")) {
 			return CommandType.C_CALL;
 		}
+		else if (command.startsWith("//")) {
+			return CommandType.C_COMMENT;
+		}
 		else {return null;}
 	}
 
@@ -112,15 +117,22 @@ public class Parser {
 	 * @return somente o símbolo ou o valor número da instrução.
 	 */
 	public String arg1(String command) {
-		if (commandType(command) != CommandType.C_RETURN) {
-			if (commandType(command) == CommandType.C_ARITHMETIC) {
-				return command;
-			}
-			else if (commandType(command) == CommandType.C_PUSH || commandType(command) == CommandType.C_POP) {
-				return command.split(" ")[1];
-			}
+		if (commandType(command) == CommandType.C_ARITHMETIC) {
+			return command;
 		}
-		return null;
+		else if (commandType(command) == CommandType.C_PUSH
+				|| commandType(command) == CommandType.C_POP
+				|| commandType(command) == CommandType.C_FUNCTION
+				|| commandType(command) == CommandType.C_CALL
+				|| commandType(command) == CommandType.C_LABEL
+				|| commandType(command) == CommandType.C_GOTO
+				|| commandType(command) == CommandType.C_IF) {
+			return command.split(" ")[1];
+		}
+		else {
+			return null;
+		}
+		
 	}
 
 	/**
@@ -130,7 +142,16 @@ public class Parser {
 	 * @return o símbolo da instrução (sem os dois pontos).
 	 */
 	public Integer arg2(String command) {
-		return Integer.parseInt(command.split(" ")[2]);
+		if (commandType(command) == CommandType.C_PUSH
+			|| commandType(command) == CommandType.C_POP
+			|| commandType(command) == CommandType.C_FUNCTION
+			|| commandType(command) == CommandType.C_CALL) {
+			return Integer.parseInt(command.split(" ")[2]);
+		}
+		else {
+			return null;
+		}
+		
 	}
 
 	// fecha o arquivo de leitura

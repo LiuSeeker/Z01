@@ -87,6 +87,10 @@ public class VMtranslate {
                  */
                 switch (parser.commandType(parser.command())) {
                     case C_PUSH:
+                    	code.writePushPop(parser.commandType(parser.command()),
+                                parser.arg1(parser.command()),
+                                parser.arg2(parser.command()));
+                        break;
                     case C_POP:
                         code.writePushPop(parser.commandType(parser.command()),
                                 parser.arg1(parser.command()),
@@ -115,6 +119,8 @@ public class VMtranslate {
                     case C_ARITHMETIC:
                         code.writeArithmetic(parser.command());
                         break;
+                    case C_COMMENT:
+                    	break;
                     default:
                         Error.error("Comando não reconhecido");
                         break;
