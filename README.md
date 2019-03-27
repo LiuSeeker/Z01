@@ -1,3 +1,8 @@
+# Elementos de Sistemas - Insper
+
+Este repositório contém um conjunto de projetos que visa aprender tudo sobre computadores, desde a camada mais primitiva, binários e lógica, até Virtual Machines
+
+
 Resumo Material Elementos de Sistemas :
 
 
